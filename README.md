@@ -21,10 +21,15 @@ Lista de decoradores que podem ser usados em ambos os lados do texto pela funç�
 
 ### `textTransformation.decorate(t, l, r, ir, il)`
 Função de decoração do texto.
+
 `t`: Texto a ser decorado.
+
 `l`: Decorador a esquerda.
+
 `r`: Decorador a direita.
+
 `ir`: Inverte o decorador a direita?
+
 `il`: Inverte o decorador a esquerda?
 
 **Exemplo:**
