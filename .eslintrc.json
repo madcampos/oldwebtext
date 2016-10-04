@@ -5,9 +5,9 @@
 	},
 	"env": {
 		"es6": true,
-		"shared-node-browser": true,
-		"worker": true,
-		"serviceworker": true
+		"shared-node-browser": true
+		//"worker": true,
+		//"serviceworker": true
 	},
 	"rules": {
 		//Possible errors
