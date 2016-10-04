@@ -1,21 +1,55 @@
 /**
- * This function produces a object that contains text transformation functions.
+ * Transforms text with the given style.
+ * @namespace
  */
 let textTransformation = (() => {
-	//TODO: add unicode aware character splitting.
+	'use strict';
+	const DIACRITICS = /(?:[\u0300-\u036F\u1DC0-\u1DFF\u20D0-\u20FF\uFE20-\uFE2F]+)/;
 
 	/**
 	 * Produces a string transformation function based on a character map.
+	 * @private
 	 * @param {Map} map The transformation map.
 	 * @param {Object} [options] Options to the tranformation.
-	 * @param {Boolean} [options.caseInsensitive=true] Sets the transformation to be case insensitive.
 	 * @return {Function} The transformation function.
 	 */
-	function mapText(map, options = {caseInsensitive: true}){
-		return (text) => text.split('').map((e) => map.get(options.caseInsensitive ? e.toLowerCase() : e) || e).join('');
+	function mapText(map){
+		return (text) => [...text].map((char) => map.get(char) || char).join('');
 	}
 
-	//The styles and theyr respective maps.
+
+	let decorators = new Map([
+		['bars', '▂▃▅▆█'],
+		['spacedBars', '▂ ▃ ▄ ▅ ▆ ▇ █ '],
+		['music', 'ılı.lıllılı.ıllı.'],
+		['fenced', 'ܔܢܜܔܔܢܜܔܔܢܜܔ'],
+		['copyright', '©'],
+		['trademark', '™'],
+		['registered', '®'],
+		['curly', '(¯`·._.·[ '],
+		['whip', '(¯`·._) '],
+		['longWave', ',.-~*¨¯¨*·~-.¸-(_ '],
+		['shortWave', '•·.·´¯`·.·• '],
+		['wavy', '`·.¸¸.·´´¯`··._.· '],
+		['wavyThick', '°º¤ø,¸¸,ø¤º°`°º¤ø,¸ '],
+		['reverseLongWave', '¯¨\'*·~-.¸¸,.-~* '],
+		['waveThick', '×º°”˜`”°º× '],
+		['fishy', '<º))))><.·´¯`·. '],
+		['curlyArrow', '.·´¯`·-> '],
+		['pierced', '- -¤--^] '],
+		['patched', '-·=»‡«=·- '],
+		['straight', '- - --^[ '],
+		['sewed', '––––•(-• '],
+		['sewedThick', '··¤(`×[¤ '],
+		['bubblesIn', '¨°o.O '],
+		['bubblesOut', '•°o.O '],
+		['sound', 'Oº°‘¨ '],
+		['heart', '(¯`•¸·´¯) '],
+		['arrowedHeart', '»-(¯`v´¯)-» '],
+		['nextYear', (() => (new Date().getFullYear() + 1).toString())()],
+		['currentYear', (() => new Date().getFullYear().toString())()]
+	]);
+
 	let styles = new Map([
 		['funky', mapText(new Map([
 			['a', 'ล'],
@@ -372,54 +406,59 @@ let textTransformation = (() => {
 			['y', 'ʸ'],
 			['z', 'ᶻ']
 		]))],
-		['boxed', (text) => `[${text.split('').map((char) => `${char}\u0332\u0305`).join('')}]`],
-		['striked', (text) => text.split('').map((char) => `${char}\u0336`).join('')],
-		['deleted', (text) => text.split('').map((char) => `${char}\u0338`).join('')],
-		['camelCase', (text) => text.split('').map((char, index) => index % 2 === 0 ? char.toUpperCase() : char.toLowerCase()).join('')],
-		['inverted', (text) => text.split('').reverse().join('')],
-		['matrix', (text) => text.split('').map((char) => ['\u033f', '\u0347', '\u033f\u0347', '\u0305', '\u0332', '\u0305\u0332', '\u0336', '\u0347'][Math.floor(Math.random() * 7)] + char).join('')],
-		['doubleLetters', (text) => text.replace(/(.)/g, '$1$1')],
-		['doubleSomeLetters', (text) => text.split('').map((char) => Math.floor(Math.random() * 10 % 2) ? char : `${char}${char}`).join('')],
-		['newYear', (text) => {
-			let pastYear = new Date().getFullYear().toString().split('').map((num) => ['₀', '₁', '₂', '₃', '₄', '₅', '₆', '₇', '₈', '₉'][num]).join('');
-			let newYear = new Date().getFullYear() + 1).toString().split('').map((num) => ['⁰', '¹', '²', '³', '⁴', '⁵', '⁶', '⁷', '⁸', '⁹'][num]).join('');
-			return `~${pastYear}~ ${text} ~${newYear}`;
-		}],
+		['lowerNumbers', mapText(new Map([
+			['0', '₀'],
+			['1', '₁'],
+			['2', '₂'],
+			['3', '₃'],
+			['4', '₄'],
+			['5', '₅'],
+			['6', '₆'],
+			['7', '₇'],
+			['8', '₈'],
+			['9', '₉']
+		]))],
+		['upperNumbers', mapText(new Map([
+			['0', '⁰'],
+			['1', '¹'],
+			['2', '²'],
+			['3', '³'],
+			['4', '⁴'],
+			['5', '⁵'],
+			['6', '⁶'],
+			['7', '⁷'],
+			['8', '⁸'],
+			['9', '⁹']
+		]))],
+		['boxed', (text) => `[${[...text].map((char) => `${char}\u0332\u0305`).join('')}]`],
+		['striked', (text) => [...text].map((char) => `${char}\u0336`).join('')],
+		['deleted', (text) => [...text].map((char) => `${char}\u0338`).join('')],
+		//TODO: improve
+		['camelCase', (text) => [...text].map((char, index) => index % 2 === 0 ? char.toUpperCase() : char.toLowerCase()).join('')],
+		['inverted', (text) => [...text].reverse().join('')],
+		//TODO: improve
+		['matrix', (text) => [...text].map((char) => ['\u033f', '\u0347', '\u033f\u0347', '\u0305', '\u0332', '\u0305\u0332', '\u0336', '\u0347'][Math.floor(Math.random() * 7)] + char).join('')],
+		['doubleLetters', (text) => [...text].map((char) => char.repeat(2)).join('')],
+		['doubleSomeLetters', (text) => [...text].map((char) => char.repeat(Math.floor(Math.random() * 2) + 1)).join('')],
+		['newYear', (text) => `~${styles.get('lowerNumbers')(decorators.get('currentYear'))}~ ${text} ~${styles.get('upperNumbers')(decorators.get('nextYear'))}~`],
 		['betweenEmoji', (text, emoji) => `${emoji} ${text} ${emoji}`]
+		//TODO: add zalgo!
 	]);
 
-	//Decorators to style even further your text.
-	let decorators = {
-		bars: '▂▃▅▆█',
-		spacedBars: '▂ ▃ ▄ ▅ ▆ ▇ █ ',
-		music: 'ılı.lıllılı.ıllı.',
-		fenced: 'ܔܢܜܔܔܢܜܔܔܢܜܔ',
-		copyright: '©',
-		trademark: '™',
-		registered: '®',
-		curly: '(¯`·._.·[ ',
-		whip: '(¯`·._) ',
-		longWave: ',.-~*¨¯¨*·~-.¸-(_ ',
-		shortWave: '•·.·´¯`·.·• ',
-		wavy: '`·.¸¸.·´´¯`··._.· ',
-		wavyThick: '°º¤ø,¸¸,ø¤º°`°º¤ø,¸ ',
-		reverseLongWave: '¯¨\'*·~-.¸¸,.-~* ',
-		waveThick: '×º°”˜`”°º× ',
-		fishy: '<º))))><.·´¯`·. ',
-		curlyArrow: '.·´¯`·-> ',
-		pierced: '- -¤--^] ',
-		patched: '-·=»‡«=·- ',
-		straight: '- - --^[ ',
-		sewed: '––––•(-• ',
-		sewedThick: '··¤(`×[¤ ',
-		bubblesIn: '¨°o.O ',
-		bubblesOut: '•°o.O ',
-		sound: 'Oº°‘¨ ',
-		heart: '(¯`•¸·´¯) ',
-		arrowedHeart: '»-(¯`v´¯)-» '
-	};
-
-	function decorate(text, style = 'random', options = {leftDecorator: '', rightDecorator: '', invertRight: false, invertLeft: false}){
+	/**
+	 * Decorate a string with the given style.
+	 * @param {String} text The text to decorate.
+	 * @param {String} [style='leet'] The style to apply to the string.
+	 * @param {Object} options The decoration options.
+	 * @param {String} [options.leftDecorator=''] The left decorator to add to the text.
+	 * @param {String} [options.rightDecorator=''] The right decorator to add to the text.
+	 * @param {Boolean} [options.invertLeft=false] If the left decorator is to be inverted.
+	 * @param {Boolean} [options.invertRight=false] If the right decorator is to be inverted.
+	 * @param {Boolean} [options.caseInsensitive=true] Sets the transformation to be case insensitive.
+	 * @param {Boolena} [options.splitDiacritics=false] Splits the character from it's diacritics.
+	 * @return {String} The decorated string.
+	 */
+	function decorate(text, style = 'leet', options = {leftDecorator: '', rightDecorator: '', invertRight: false, invertLeft: false, caseInsensitive: true, splitDiacritics: false}){
 		if (options.invertLeft) {
 			options.leftDecorator = styles.get('inverted')(options.leftDecorator);
 		}
@@ -428,12 +467,25 @@ let textTransformation = (() => {
 			options.rightDecorator = styles.get('inverted')(options.rightDecorator);
 		}
 
+		if (options.splitDiacritics) {
+			//TODO: add diacritics normalization function
+			text = text.normalize('NFD');
+		}
+
+		if (options.caseInsensitive) {
+			text = text.toLowerCase();
+		}
+
 		return `${options.leftDecorator}${styles.get(style)(text)}${options.rightDecorator}`;
 	}
 
 	return {
 		addStyle: (name, style) => styles.set(name, style),
 		removeStyle: (name) => styles.delete(name),
+		listStyles: () => [...styles.keys()],
+		addDecorator: (name, decorator) => decorators.set(name, decorator),
+		removeDecorator: (name) => decorators.delete(name),
+		listDecorators: () => [...decorators.keys()],
 		decorate
 	};
 })();
