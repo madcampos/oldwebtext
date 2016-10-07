@@ -4,19 +4,42 @@
  */
 let decorate = (() => {
 	'use strict';
-	const DIACRITICS = /(?:[\u0300-\u036F\u1DC0-\u1DFF\u20D0-\u20FF\uFE20-\uFE2F]+)/;
+	const DIACRITICS = /[\u0300-\u036F\u1DC0-\u1DFF\u20D0-\u20FF\uFE20-\uFE2F]/;
 
 	/**
-	 * Produces a string transformation function based on a character map.
+	 * Produces a string transformation function based on the given map.
 	 * @private
 	 * @param {Map} map The transformation map.
-	 * @param {Object} [options] Options to the tranformation.
 	 * @return {Function} The transformation function.
 	 */
-	function mapText(map){
-		return (text) => [...text].map((char) => map.get(char) || char).join('');
+	function mapTransform(map){
+		return (text, caseInsensitive) => [...text].map((char) => map.get(caseInsensitive ? char.toLowerCase() : char) || char).join('');
 	}
 
+	/**
+	 * Decorates a character if it's not a combining mark.
+	 * @private
+	 * @param {String} char The character to be decorated.
+	 * @param {String} decorator The decorator to apply to the character.
+	 * @return {String} The decorated string or the combining mark.
+	 */
+	function decorateNCM(char, decorator){
+		if (DIACRITICS.test(char)) {
+			return char;
+		}
+
+		return `${char}${decorator}`;
+	}
+
+	/**
+	 * Produces a string transformation function based on the given function.
+	 * @private
+	 * @param {Function} func The transformation function.
+	 * @return {Function} The transformation function.
+	 */
+	function funcTransform(func){
+		return (text) => [...text].map(func).join('');
+	}
 
 	let decorators = new Map([
 		['bars', '▂▃▅▆█'],
@@ -51,7 +74,7 @@ let decorate = (() => {
 	]);
 
 	let styles = new Map([
-		['funky', mapText(new Map([
+		['funky', mapTransform(new Map([
 			['a', 'ล'],
 			['b', 'в'],
 			['c', '¢'],
@@ -79,7 +102,7 @@ let decorate = (() => {
 			['y', 'ý'],
 			['z', 'ž']
 		]))],
-		['stylish', mapText(new Map([
+		['stylish', mapTransform(new Map([
 			['a', 'α'],
 			['e', 'є'],
 			['h', 'н'],
@@ -92,7 +115,7 @@ let decorate = (() => {
 			['t', 'т'],
 			['u', 'υ']
 		]))],
-		['punk', mapText(new Map([
+		['punk', mapTransform(new Map([
 			['a', 'α'],
 			['e', 'є'],
 			['h', 'Ћ'],
@@ -104,7 +127,7 @@ let decorate = (() => {
 			['s', 's'],
 			['t', 'ŧ']
 		]))],
-		['arabic', mapText(new Map([
+		['arabic', mapTransform(new Map([
 			['a', 'آ'],
 			['b', 'أ'],
 			['c', 'ؤ'],
@@ -132,7 +155,7 @@ let decorate = (() => {
 			['y', 'غ'],
 			['z', 'ב']
 		]))],
-		['leet', mapText(new Map([
+		['leet', mapTransform(new Map([
 			['a', '4'],
 			['e', '3'],
 			['i', '1'],
@@ -140,7 +163,7 @@ let decorate = (() => {
 			['s', '5'],
 			['t', '7']
 		]))],
-		['future', mapText(new Map([
+		['future', mapTransform(new Map([
 			['a', 'α'],
 			['b', 'в'],
 			['c', '૮'],
@@ -163,7 +186,7 @@ let decorate = (() => {
 			['x', '×'],
 			['w', 'ખ']
 		]))],
-		['upsidedown', mapText(new Map([
+		['upsidedown', mapTransform(new Map([
 			['a', 'ɐ'],
 			['d', 'p'],
 			['e', 'ǝ'],
@@ -178,7 +201,7 @@ let decorate = (() => {
 			['u', 'n'],
 			['w', 'm']
 		]))],
-		['circle', mapText(new Map([
+		['circle', mapTransform(new Map([
 			['a', 'ⓐ'],
 			['b', 'ⓑ'],
 			['c', 'ⓒ'],
@@ -206,7 +229,7 @@ let decorate = (() => {
 			['y', 'ⓨ'],
 			['z', 'ⓩ']
 		]))],
-		['simple', mapText(new Map([
+		['simple', mapTransform(new Map([
 			['a', 'Α'],
 			['e', 'э'],
 			['h', 'н'],
@@ -218,7 +241,7 @@ let decorate = (() => {
 			['t', 'Ŧ'],
 			['u', 'u']
 		]))],
-		['alien', mapText(new Map([
+		['alien', mapTransform(new Map([
 			['a', 'ค'],
 			['b', '๒'],
 			['d', '๔'],
@@ -237,7 +260,7 @@ let decorate = (() => {
 			['t', 'т'],
 			['u', 'ย']
 		]))],
-		['street', mapText(new Map([
+		['street', mapTransform(new Map([
 			['a', 'Ǻ'],
 			['b', 'в'],
 			['e', '€'],
@@ -256,7 +279,7 @@ let decorate = (() => {
 			['y', '¥'],
 			['z', 'ƶ']
 		]))],
-		['greek', mapText(new Map([
+		['greek', mapTransform(new Map([
 			['a', 'Δ'],
 			['b', 'β'],
 			['c', 'Ć'],
@@ -284,7 +307,7 @@ let decorate = (() => {
 			['y', '¥'],
 			['z', 'Ž']
 		]))],
-		['egiptian', mapText(new Map([
+		['egiptian', mapTransform(new Map([
 			['a', 'ɑ'],
 			['b', 'ɓ'],
 			['d', 'ɗ'],
@@ -300,14 +323,14 @@ let decorate = (() => {
 			['s', 'ร'],
 			['v', 'ѵ']
 		]))],
-		['french', mapText(new Map([
+		['french', mapTransform(new Map([
 			['a', 'á'],
 			['e', 'è'],
 			['i', 'í'],
 			['o', 'õ'],
 			['u', 'û']
 		]))],
-		['swedish', mapText(new Map([
+		['swedish', mapTransform(new Map([
 			['a', 'ắ'],
 			['b', 'ß'],
 			['c', 'ç'],
@@ -322,7 +345,7 @@ let decorate = (() => {
 			['u', 'ų'],
 			['y', 'ý']
 		]))],
-		['japanese', mapText(new Map([
+		['japanese', mapTransform(new Map([
 			['a', 'ﾑ'],
 			['b', 'ら'],
 			['c', 'こ'],
@@ -350,7 +373,7 @@ let decorate = (() => {
 			['y', 'ﾘ'],
 			['z', '乙']
 		]))],
-		['fatty', mapText(new Map([
+		['fatty', mapTransform(new Map([
 			['a', 'ᗩ'],
 			['b', 'ᙖ'],
 			['c', 'ᑕ'],
@@ -378,7 +401,7 @@ let decorate = (() => {
 			['y', 'ϒ'],
 			['z', '乙']
 		]))],
-		['rollercoaster', mapText(new Map([
+		['rollercoaster', mapTransform(new Map([
 			['a', 'ₐ'],
 			['b', 'ᴮ'],
 			['c', 'ᶜ'],
@@ -406,7 +429,7 @@ let decorate = (() => {
 			['y', 'ʸ'],
 			['z', 'ᶻ']
 		]))],
-		['lowerNumbers', mapText(new Map([
+		['lowerNumbers', mapTransform(new Map([
 			['0', '₀'],
 			['1', '₁'],
 			['2', '₂'],
@@ -418,7 +441,7 @@ let decorate = (() => {
 			['8', '₈'],
 			['9', '₉']
 		]))],
-		['upperNumbers', mapText(new Map([
+		['upperNumbers', mapTransform(new Map([
 			['0', '⁰'],
 			['1', '¹'],
 			['2', '²'],
@@ -430,19 +453,15 @@ let decorate = (() => {
 			['8', '⁸'],
 			['9', '⁹']
 		]))],
-		['boxed', (text) => `[${[...text].map((char) => `${char}\u0332\u0305`).join('')}]`],
-		['striked', (text) => [...text].map((char) => `${char}\u0336`).join('')],
-		['deleted', (text) => [...text].map((char) => `${char}\u0338`).join('')],
-		//TODO: improve
-		['camelCase', (text) => [...text].map((char, index) => index % 2 === 0 ? char.toUpperCase() : char.toLowerCase()).join('')],
+		['boxed', funcTransform((char) => decorateNCM(char, '\u0332\u0305'))],
+		['striked', funcTransform((char) => decorateNCM(char, '\u0336'))],
+		['deleted', funcTransform((char) => decorateNCM(char, '\u0338'))],
+		['camelCase', funcTransform((char, index) => index % 2 === 0 ? char.toUpperCase() : char.toLowerCase())],
 		['inverted', (text) => [...text].reverse().join('')],
-		//TODO: improve
-		['matrix', (text) => [...text].map((char) => ['\u033f', '\u0347', '\u033f\u0347', '\u0305', '\u0332', '\u0305\u0332', '\u0336', '\u0347'][Math.floor(Math.random() * 7)] + char).join('')],
-		['doubleLetters', (text) => [...text].map((char) => char.repeat(2)).join('')],
-		['doubleSomeLetters', (text) => [...text].map((char) => char.repeat(Math.floor(Math.random() * 2) + 1)).join('')],
-		['newYear', (text) => `~${styles.get('lowerNumbers')(decorators.get('currentYear'))}~ ${text} ~${styles.get('upperNumbers')(decorators.get('nextYear'))}~`],
-		['betweenEmoji', (text, emoji = '') => `${emoji} ${text} ${emoji}`]
-		//TODO: add zalgo!
+		['matrix', funcTransform((char) => decorateNCM(char, ['\u033f', '\u0347', '\u033f\u0347', '\u0305', '\u0332', '\u0305\u0332', '\u0336', '\u0347'][Math.floor(Math.random() * 7)]))],
+		['doubleLetters', funcTransform((char) => decorateNCM(char, char))],
+		['doubleSomeLetters', funcTransform((char) => decorateNCM(char, char.repeat(Math.floor(Math.random() * 2))))],
+		['newYear', (text) => `~${styles.get('lowerNumbers')(decorators.get('currentYear'))}~ ${text} ~${styles.get('upperNumbers')(decorators.get('nextYear'))}~`]
 	]);
 
 	/**
@@ -455,10 +474,10 @@ let decorate = (() => {
 	 * @param {Boolean} [options.invertLeft=false] If the left decorator is to be inverted.
 	 * @param {Boolean} [options.invertRight=false] If the right decorator is to be inverted.
 	 * @param {Boolean} [options.caseInsensitive=true] Sets the transformation to be case insensitive.
-	 * @param {Boolena} [options.splitDiacritics=false] Splits the character from it's diacritics.
+	 * @param {Boolean} [options.splitDiacritics=true] Splits the character from it's diacritics.
 	 * @return {String} The decorated string.
 	 */
-	function decorateText(text, style = 'leet', options = {leftDecorator: '', rightDecorator: '', invertRight: false, invertLeft: false, caseInsensitive: true, splitDiacritics: false}){
+	function decorateText(text, style = 'leet', options = {leftDecorator: '', rightDecorator: '', invertRight: false, invertLeft: false, caseInsensitive: true, splitDiacritics: true}){
 		if (options.invertLeft) {
 			options.leftDecorator = styles.get('inverted')(options.leftDecorator);
 		}
@@ -468,15 +487,10 @@ let decorate = (() => {
 		}
 
 		if (options.splitDiacritics) {
-			//TODO: add diacritics normalization function
 			text = text.normalize('NFD');
 		}
 
-		if (options.caseInsensitive) {
-			text = text.toLowerCase();
-		}
-
-		return `${options.leftDecorator}${styles.get(style)(text)}${options.rightDecorator}`;
+		return `${options.leftDecorator}${styles.get(style)(text, options.caseInsensitive)}${options.rightDecorator}`;
 	}
 
 	decorateText.addStyle = (name, style) => styles.set(name, style);
