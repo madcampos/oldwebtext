@@ -2,7 +2,7 @@
  * Transforms text with the given style.
  * @namespace
  */
-let textTransformation = (() => {
+let decorate = (() => {
 	'use strict';
 	const DIACRITICS = /(?:[\u0300-\u036F\u1DC0-\u1DFF\u20D0-\u20FF\uFE20-\uFE2F]+)/;
 
@@ -441,7 +441,7 @@ let textTransformation = (() => {
 		['doubleLetters', (text) => [...text].map((char) => char.repeat(2)).join('')],
 		['doubleSomeLetters', (text) => [...text].map((char) => char.repeat(Math.floor(Math.random() * 2) + 1)).join('')],
 		['newYear', (text) => `~${styles.get('lowerNumbers')(decorators.get('currentYear'))}~ ${text} ~${styles.get('upperNumbers')(decorators.get('nextYear'))}~`],
-		['betweenEmoji', (text, emoji) => `${emoji} ${text} ${emoji}`]
+		['betweenEmoji', (text, emoji = '') => `${emoji} ${text} ${emoji}`]
 		//TODO: add zalgo!
 	]);
 
@@ -458,7 +458,7 @@ let textTransformation = (() => {
 	 * @param {Boolena} [options.splitDiacritics=false] Splits the character from it's diacritics.
 	 * @return {String} The decorated string.
 	 */
-	function decorate(text, style = 'leet', options = {leftDecorator: '', rightDecorator: '', invertRight: false, invertLeft: false, caseInsensitive: true, splitDiacritics: false}){
+	function decorateText(text, style = 'leet', options = {leftDecorator: '', rightDecorator: '', invertRight: false, invertLeft: false, caseInsensitive: true, splitDiacritics: false}){
 		if (options.invertLeft) {
 			options.leftDecorator = styles.get('inverted')(options.leftDecorator);
 		}
@@ -479,13 +479,13 @@ let textTransformation = (() => {
 		return `${options.leftDecorator}${styles.get(style)(text)}${options.rightDecorator}`;
 	}
 
-	return {
-		addStyle: (name, style) => styles.set(name, style),
-		removeStyle: (name) => styles.delete(name),
-		listStyles: () => [...styles.keys()],
-		addDecorator: (name, decorator) => decorators.set(name, decorator),
-		removeDecorator: (name) => decorators.delete(name),
-		listDecorators: () => [...decorators.keys()],
-		decorate
-	};
+	decorateText.addStyle = (name, style) => styles.set(name, style);
+	decorateText.removeStyle = (name) => styles.delete(name);
+	decorateText.listStyles = () => [...styles.keys()];
+
+	decorateText.addDecorator = (name, decorator) => decorators.set(name, decorator);
+	decorateText.removeDecorator = (name) => decorators.delete(name);
+	decorateText.listDecorators = () => [...decorators.keys()];
+
+	return decorateText;
 })();
