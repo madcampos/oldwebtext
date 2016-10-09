@@ -478,6 +478,14 @@ let decorate = (() => {
 	 * @return {String} The decorated string.
 	 */
 	function decorateText(text, style = 'leet', options = {leftDecorator: '', rightDecorator: '', invertRight: false, invertLeft: false, caseInsensitive: true, splitDiacritics: true}){
+		if (options.leftDecorator) {
+			options.leftDecorator = decorators.get(options.leftDecorator);
+		}
+
+		if (options.rightDecorator) {
+			options.rightDecorator = decorators.get(options.rightDecorator);
+		}
+
 		if (options.invertLeft) {
 			options.leftDecorator = styles.get('inverted')(options.leftDecorator);
 		}
@@ -493,6 +501,8 @@ let decorate = (() => {
 		return `${options.leftDecorator}${styles.get(style)(text, options.caseInsensitive)}${options.rightDecorator}`;
 	}
 
+	//TODO: rework this methods!
+	//style as getter to return a style by it's name, as setter to update the style or create a new style if none exists and to remove if nothing but the name is given.
 	decorateText.addStyle = (name, style) => styles.set(name, style);
 	decorateText.removeStyle = (name) => styles.delete(name);
 	decorateText.listStyles = () => [...styles.keys()];
