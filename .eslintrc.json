@@ -1,6 +1,6 @@
 {
 	"parserOptions": {
-		//"sourceType": "module",
+		"sourceType": "module",
 		"ecmaVersion": 6
 	},
 	"env": {
@@ -12,10 +12,10 @@
 	"rules": {
 		//Possible errors
 		"no-cond-assign": ["error", "always"],
-		//"no-console": "warn",
+		"no-console": "warn",
 		"no-constant-condition": "error",
 		"no-control-regex": "error",
-		//"no-debugger": "warn",
+		"no-debugger": "warn",
 		"no-dupe-args": "error",
 		"no-dupe-keys": "error",
 		"no-duplicate-case": "error",
@@ -66,7 +66,7 @@
 		"no-eval": "error",
 		"no-extend-native": "error",
 		"no-extra-bind": "error",
-		//"no-extra-label": "error",
+		"no-extra-label": "error",
 		"no-fallthrough": "error",
 		"no-floating-decimal": "error",
 		"no-global-assign": "error",
@@ -116,7 +116,7 @@
 		//"init-declarations": "error",
 		"no-catch-shadow": "error",
 		"no-delete-var": "error",
-		//"no-label-var": "error",
+		"no-label-var": "error",
 		//"no-restricted-globals": ["error", "event"],
 		"no-shadow-restricted-names": "error",
 		"no-shadow": ["warn", {"builtinGlobals": true}],
@@ -237,7 +237,7 @@
 		"no-var": "warn",
 		"object-shorthand": "warn",
 		"prefer-arrow-callback": "warn",
-		//"prefer-const": "warn",
+		"prefer-const": "warn",
 		"prefer-reflect": "warn",
 		"prefer-rest-params": "warn",
 		"prefer-spread": "warn",
