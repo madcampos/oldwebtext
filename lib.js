@@ -464,6 +464,11 @@ const styles = new Map([
 	['doubleSomeLetters', funcTransform((char) => decorateNonCombiningMark(char, char.repeat(Math.floor(Math.random() * 2))))],
 	['newYear', (text) => `~${styles.get('lowerNumbers')(decorators.get('currentYear'))}~ ${text} ~${styles.get('upperNumbers')(decorators.get('nextYear'))}~`]
 	//TODO: add language games https://en.wikipedia.org/wiki/Language_game#List_of_common_language_games
+	//TODO: add hyphenation lib or build it from scratch?
+	//https://github.com/cuzzo/Hyphenator
+	//http://www.anastigmatix.net/postscript/Hyphenate.html
+	//https://github.com/bramstein/hypher
+	//https://github.com/mnater/Hyphenator
 ]);
 
 /**
