@@ -12,8 +12,8 @@ const env = {
 	// PUBLIC_URL: 'https://madcampos.github.io/oldwebtext/',
 	PUBLIC_URL: 'https://localhost:8080/',
 
-	THEME_COLOR: '#9400d3',
-	BACKGROUND_COLOR: '#252525',
+	THEME_COLOR: '#2e8b57',
+	BACKGROUND_COLOR: '#f5f5f5',
 
 	APP_NAME: 'Old Web Text',
 	APP_SHORT_NAME: 'OWT',
