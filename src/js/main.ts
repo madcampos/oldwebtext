@@ -16,6 +16,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 	const stylesContainer = document.querySelector('#styles') as HTMLFieldSetElement;
 	const decoratorsContainer = document.querySelector('#decorators') as HTMLFieldSetElement;
 
+	document.querySelector('#styles-loader')?.remove();
+
 	textDecorator.listStyles().forEach((style) => {
 		const input = document.createElement('input');
 		const label = document.createElement('label');
@@ -28,6 +30,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 		stylesContainer.appendChild(label);
 		stylesContainer.appendChild(input);
 	});
+
+	document.querySelector('#decorators-loader')?.remove();
 
 	textDecorator.listDecorators().forEach((decorator) => {
 		const input = document.createElement('input');
