@@ -64,6 +64,7 @@ body {
 	scrollbar-width: thin;
 	scrollbar-color: var(--theme-color) var(--scrollbar-bg);
 
+	caret-color: var(--theme-color);
 	accent-color: var(--theme-color);
 }
 
@@ -95,7 +96,7 @@ label {
 	margin: 1rem 0 0.5rem;
 }
 
-input {
+input:not([type='checkbox']) {
 	appearance: none;
 	font-size: inherit;
 	background-color: var(--input-bg-color);
@@ -109,6 +110,7 @@ input {
 
 input[readonly] {
 	background: transparent;
+	-webkit-touch-callout: all;
 	user-select: all;
 }
 

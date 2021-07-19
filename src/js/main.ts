@@ -27,6 +27,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 		input.classList.add('style');
 		input.readOnly = true;
 
+		input.addEventListener('focus', () => {
+			input.select();
+		});
+
 		stylesContainer.appendChild(label);
 		stylesContainer.appendChild(input);
 	});
@@ -42,6 +46,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 		input.classList.add('decorator');
 		input.readOnly = true;
 
+		input.addEventListener('focus', () => {
+			input.select();
+		});
+
 		decoratorsContainer.appendChild(label);
 		decoratorsContainer.appendChild(input);
 	});
@@ -54,15 +62,19 @@ document.addEventListener('DOMContentLoaded', async () => {
 		styles.forEach((input) => {
 			const style = input.dataset.style as string;
 
-			input.value = textDecorator.decorateText(originalText, style);
+			input.value = textDecorator.decorateText(originalText, style, {
+				stripAccents: document.querySelector<HTMLInputElement>('#strip-accents')?.checked
+			});
 		});
 
 		decorators.forEach((input) => {
 			const decorator = input.dataset.decorator as string;
+			const { preferedStyle } = textDecorator.getDecorator(decorator) ?? { preferedStyle: 'nostyle' };
 
-			input.value = textDecorator.decorateText(originalText, 'nostyle', {
+			input.value = textDecorator.decorateText(originalText, preferedStyle, {
 				leftDecorator: decorator,
-				rightDecorator: decorator
+				rightDecorator: decorator,
+				stripAccents: document.querySelector<HTMLInputElement>('#strip-accents')?.checked
 			});
 		});
 	});
