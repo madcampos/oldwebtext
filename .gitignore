@@ -27,6 +27,9 @@ typings/
 # dotenv environment variables file
 .env
 
+# Build folder
+dist/
+
 # VS Code
 .vscode/
 
