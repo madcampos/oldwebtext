@@ -58,7 +58,7 @@ body {
 	justify-content: flex-start;
 	align-items: stretch;
 
-	background: var(--dark-bg-color);
+	background: var(--bg-color);
 	color: var(--text-color);
 
 	scrollbar-width: thin;
