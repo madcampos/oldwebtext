@@ -3,6 +3,7 @@
 	"version": "1.0.0",
 	"description": "Text transformer for the cool kids",
 	"main": "index.html",
+	"type": "module",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/madcampos/oldwebtext.git"

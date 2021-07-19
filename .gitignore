@@ -30,11 +30,6 @@ typings/
 # VS Code
 .vscode/
 
-# Build artifacts
-dist/
-images/covers/
-images/thumbs/
-
 # server certificates
 *.pem
 *.crt
