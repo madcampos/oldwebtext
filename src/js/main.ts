@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 		decoratorsContainer.appendChild(input);
 	});
 
-	sourceText.addEventListener('input', () => {
+	const updateStyles = () => {
 		const styles = document.querySelectorAll<HTMLInputElement>('.style');
 		const decorators = document.querySelectorAll<HTMLInputElement>('.decorator');
 		const originalText = sourceText.value;
@@ -77,5 +77,16 @@ document.addEventListener('DOMContentLoaded', async () => {
 				stripAccents: document.querySelector<HTMLInputElement>('#strip-accents')?.checked
 			});
 		});
-	});
+	};
+
+	sourceText.addEventListener('input', updateStyles);
+	sourceText.addEventListener('change', updateStyles);
+
+	const url = new URL(window.location.toString());
+	const existingText = url.searchParams.get('text') ?? '';
+
+	if (existingText) {
+		sourceText.value = existingText;
+		updateStyles();
+	}
 });
