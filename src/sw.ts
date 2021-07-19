@@ -1,7 +1,7 @@
 /* eslint-env serviceworker */
 /* eslint-disable no-console */
 /// <reference lib="webworker" />
-export {};
+export type {};
 
 const CACHE_VERSION = 'v1';
 const appShellFiles = ['./index.html'];
