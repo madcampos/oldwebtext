@@ -2,15 +2,7 @@
 
 import { TextDecorator } from './lib';
 
-document.addEventListener('DOMContentLoaded', async () => {
-	if ('serviceWorker' in navigator) {
-		try {
-			await navigator.serviceWorker.register(`${import.meta.env.PUBLIC_URL}sw.js`);
-		} catch (err) {
-			console.error(err);
-		}
-	}
-
+document.addEventListener('DOMContentLoaded', () => {
 	const textDecorator = new TextDecorator();
 	const sourceText = document.querySelector('#source-text') as HTMLInputElement;
 	const stylesContainer = document.querySelector('#styles') as HTMLFieldSetElement;

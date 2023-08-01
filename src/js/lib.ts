@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/naming-convention */
 
-import defaultStyles from './default-styles.json';
-import defaultDecorators from './default-decorators.json';
+import defaultStyles from './default-styles';
+import defaultDecorators from './default-decorators';
 
 /**
  * Decorates a character if it's not a combining mark.
@@ -37,7 +37,9 @@ export function stripCombiningMark(char: string) {
 }
 
 type CharacterMap = Map<string, string>;
+
 type StyledText = string;
+
 export type StyleFunction = (text: string, stripAccents?: boolean) => StyledText;
 export type CharacterMappingFunction = (map: CharacterMap) => StyleFunction;
 
@@ -74,15 +76,16 @@ export function createTransformationFunction(func: TransformationFunctionParamet
 }
 
 type TextStyleList = Record<string, StyleFunction>;
+
 type StylesMap = Map<string, StyleFunction>;
 
 const DEFAULT_STYLES: TextStyleList = {
 	//Mapping functions
-	...Object.entries(defaultStyles as unknown as Record<string, [string, string][]>).reduce((styles, [name, map]) => {
-		styles[name] = createMappingFunction(new Map(map));
+	...Object.entries(defaultStyles).reduce((styles, [name, map]) => {
+		styles[name] = createMappingFunction(map);
 
 		return styles;
-	}, {}),
+	}, {} as TextStyleList),
 
 	//Transformation functions
 	Parens: createTransformationFunction((char: string) => encloseNonCombiningMark(char, '〖', '〗')),
@@ -127,14 +130,15 @@ export interface Decorator {
 	preferedStyle?: string
 }
 export type DecoratorList = Record<string, Decorator>;
+
 type DecoratorsMap = Map<string, Decorator>;
 
 const DEFAULT_DECORATORS: DecoratorList = {
-	...Object.entries(defaultDecorators as Record<string, Decorator>).reduce((decorators, [name, decorator]) => {
+	...Object.entries(defaultDecorators).reduce((decorators, [name, decorator]) => {
 		decorators[name] = decorator;
 
 		return decorators;
-	}, {}),
+	}, {} as DecoratorList),
 
 	'Next Year': {
 		left: (new Date().getFullYear() + 1).toString(),
