@@ -5,14 +5,13 @@ import { resolve } from 'path';
 
 import { defineConfig, type UserConfig } from 'vitest/config';
 import { type ManifestOptions, VitePWA as vitePWA } from 'vite-plugin-pwa';
-import htmlMinifier from 'vite-plugin-html-minifier';
 
 import { externalResources, internalResources } from './src/service-worker';
 
 const manifest: Partial<ManifestOptions> = JSON.parse(readFileSync('./src/manifest.json', { encoding: 'utf8' }));
 
 export default defineConfig(({ mode }) => {
-	const baseUrl = mode === 'production' ? 'https://madcampos.dev/oldwebtext/' : 'https://localhost:3000/';
+	const baseUrl = mode === 'production' ? 'https://owt.madcampos.dev/' : 'https://localhost:3000/';
 
 	const sslOptions = mode === 'production'
 		? false
@@ -23,21 +22,6 @@ export default defineConfig(({ mode }) => {
 
 	const config: UserConfig = {
 		plugins: [
-			htmlMinifier({
-				minify: {
-					collapseWhitespace: true,
-					keepClosingSlash: false,
-					removeComments: true,
-					removeRedundantAttributes: true,
-					removeScriptTypeAttributes: false,
-					removeStyleLinkTypeAttributes: true,
-					removeEmptyAttributes: true,
-					useShortDoctype: true,
-					minifyCSS: false,
-					minifyJS: false,
-					minifyURLs: false
-				}
-			}),
 			vitePWA({
 				registerType: 'prompt',
 				minify: true,
