@@ -29,21 +29,6 @@
 	}
 }
 
-*::-webkit-scrollbar {
-	width: 0.5rem;
-	height: 0.5rem;
-}
-
-*::-webkit-scrollbar-track {
-	border-radius: 100vmax;
-	background-color: var(--scrollbar-bg);
-}
-
-*::-webkit-scrollbar-thumb {
-	border-radius: 100vmax;
-	background-color: var(--theme-color);
-}
-
 body {
 	margin: 0;
 	padding: 1rem 2rem;

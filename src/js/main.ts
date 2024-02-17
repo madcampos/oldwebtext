@@ -1,5 +1,3 @@
-/* eslint-disable no-console*/
-
 import { TextDecorator } from './lib';
 
 document.addEventListener('DOMContentLoaded', () => {

@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/naming-convention */
-
 import defaultStyles from './default-styles';
 import defaultDecorators from './default-decorators';
 
