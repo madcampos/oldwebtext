@@ -3,7 +3,7 @@
 import { readFileSync } from 'fs';
 import { resolve } from 'path';
 
-import { defineConfig, type UserConfig } from 'vitest/config';
+import { defineConfig, type UserConfig } from 'vite';
 import { type ManifestOptions, VitePWA as vitePWA } from 'vite-plugin-pwa';
 
 import { externalResources, internalResources } from './src/service-worker';
@@ -16,8 +16,8 @@ export default defineConfig(({ mode }) => {
 	const sslOptions = mode === 'production'
 		? false
 		: {
-			cert: readFileSync('./certs/server.crt'),
-			key: readFileSync('./certs/server.key')
+			cert: readFileSync('./certs/server.crt', 'utf8'),
+			key: readFileSync('./certs/server.key', 'utf8')
 		};
 
 	const config: UserConfig = {
@@ -50,6 +50,7 @@ export default defineConfig(({ mode }) => {
 		clearScreen: false,
 		server: {
 			host: 'localhost',
+			// @ts-expect-error
 			https: sslOptions,
 			open: false,
 			cors: true,
@@ -70,21 +71,9 @@ export default defineConfig(({ mode }) => {
 			}
 		},
 		preview: {
+			// @ts-expect-error
 			https: sslOptions,
 			open: true
-		},
-		test: {
-			include: ['**/*.test.ts'],
-			minThreads: 1,
-			maxThreads: 4,
-			passWithNoTests: true,
-			maxConcurrency: 4,
-			coverage: {
-				functions: 75,
-				branches: 75,
-				lines: 75,
-				statements: 75
-			}
 		}
 	};
 
