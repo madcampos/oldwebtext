@@ -1,11 +1,13 @@
 # Old Web text
-Lembra aqueles geradores de nick do MSN? Essa é uma pequena biblioteca que faz isso com qualquer texto!
 
-## Suporte
-- Chrome 49
-- Opera 36
-- Firefox 45
-- Edge 14
-- Safari 10
+Remember those old text generators from the MSN era? This is a small web app to generate those texts.
 
-TODO: add api docs
+## How to use
+
+You can visit the hosted version on [this link](https://owt.madcampos.dev/), or you can run it locally by following the steps below.
+
+## Running locally
+
+1. Clone the repository
+2. Install the dependencies with `npm install`
+3. Run the development server with `npm start`
