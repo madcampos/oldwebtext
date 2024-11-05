@@ -1,5 +1,5 @@
-import defaultStyles from './default-styles';
 import defaultDecorators from './default-decorators';
+import defaultStyles from './default-styles';
 
 /**
  * Decorates a character if it's not a combining mark.
@@ -78,24 +78,24 @@ type TextStyleList = Record<string, StyleFunction>;
 type StylesMap = Map<string, StyleFunction>;
 
 const DEFAULT_STYLES: TextStyleList = {
-	//Mapping functions
-	...Object.entries(defaultStyles).reduce((styles, [name, map]) => {
+	// Mapping functions
+	...Object.entries(defaultStyles).reduce<TextStyleList>((styles, [name, map]) => {
 		styles[name] = createMappingFunction(map);
 
 		return styles;
-	}, {} as TextStyleList),
+	}, {}),
 
-	//Transformation functions
-	Parens: createTransformationFunction((char: string) => encloseNonCombiningMark(char, '〖', '〗')),
-	Wavy: createTransformationFunction((char: string) => encloseNonCombiningMark(char, '〰', '〰')),
-	Brackets: createTransformationFunction((char: string) => encloseNonCombiningMark(char, '〔', '〕')),
+	// Transformation functions
+	'Parens': createTransformationFunction((char: string) => encloseNonCombiningMark(char, '〖', '〗')),
+	'Wavy': createTransformationFunction((char: string) => encloseNonCombiningMark(char, '〰', '〰')),
+	'Brackets': createTransformationFunction((char: string) => encloseNonCombiningMark(char, '〔', '〕')),
 	'Angle Brackets': createTransformationFunction((char: string) => encloseNonCombiningMark(char, '《', '》')),
-	Enclosed: createTransformationFunction((char: string) => encloseNonCombiningMark(char, '『', '』')),
+	'Enclosed': createTransformationFunction((char: string) => encloseNonCombiningMark(char, '『', '』')),
 	'Semi Enclosed': createTransformationFunction((char: string) => encloseNonCombiningMark(char, '【', '】')),
 	'Double Lined': createTransformationFunction((char: string) => decorateNonCombiningMark(char, '\u0332\u0305')),
-	Hearts: createTransformationFunction((char: string) => decorateNonCombiningMark(char, '♥')),
-	Striked: createTransformationFunction((char: string) => decorateNonCombiningMark(char, '\u0336')),
-	Deleted: createTransformationFunction((char: string) => decorateNonCombiningMark(char, '\u0338')),
+	'Hearts': createTransformationFunction((char: string) => decorateNonCombiningMark(char, '♥')),
+	'Striked': createTransformationFunction((char: string) => decorateNonCombiningMark(char, '\u0336')),
+	'Deleted': createTransformationFunction((char: string) => decorateNonCombiningMark(char, '\u0338')),
 	'Camel Case': createTransformationFunction((char: string, index: number) => {
 		const EVEN = 2;
 
@@ -105,8 +105,8 @@ const DEFAULT_STYLES: TextStyleList = {
 
 		return char.toLowerCase();
 	}),
-	Inverted: (text) => [...text].reverse().join(''),
-	Matrix: createTransformationFunction((char: string) => {
+	'Inverted': (text) => [...text].reverse().join(''),
+	'Matrix': createTransformationFunction((char: string) => {
 		const RANDOM_CONST = 7;
 		const MATRIX_MARKS = ['\u033f', '\u0347', '\u033f\u0347', '\u0305', '\u0332', '\u0305\u0332', '\u0336', '\u0347'];
 		const selectedSymbol = MATRIX_MARKS[Math.floor(Math.random() * RANDOM_CONST)];
@@ -123,20 +123,20 @@ const DEFAULT_STYLES: TextStyleList = {
 };
 
 export interface Decorator {
-	left: string,
-	right: string,
-	preferedStyle?: string
+	left: string;
+	right: string;
+	preferedStyle?: string;
 }
 export type DecoratorList = Record<string, Decorator>;
 
 type DecoratorsMap = Map<string, Decorator>;
 
 const DEFAULT_DECORATORS: DecoratorList = {
-	...Object.entries(defaultDecorators).reduce((decorators, [name, decorator]) => {
+	...Object.entries(defaultDecorators).reduce<DecoratorList>((decorators, [name, decorator]) => {
 		decorators[name] = decorator;
 
 		return decorators;
-	}, {} as DecoratorList),
+	}, {}),
 
 	'Next Year': {
 		left: (new Date().getFullYear() + 1).toString(),
@@ -155,10 +155,10 @@ const DEFAULT_DECORATORS: DecoratorList = {
 };
 
 export interface TextDecoratorOptions {
-	leftDecorator?: string,
-	rightDecorator?: string,
-	normalizeResult?: boolean,
-	stripAccents?: boolean
+	leftDecorator?: string;
+	rightDecorator?: string;
+	normalizeResult?: boolean;
+	stripAccents?: boolean;
 }
 
 export class TextDecorator {
@@ -200,7 +200,6 @@ export class TextDecorator {
 
 		return `${leftDecorator}${finalText}${rightDecorator}`;
 	}
-
 
 	addStyle = (name: string, style: StyleFunction) => this.#styles.set(name, style);
 	removeStyle = (name: string) => this.#styles.delete(name);
