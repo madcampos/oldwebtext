@@ -16,40 +16,29 @@
 		"start": "vite",
 		"typecheck": "tsc --noEmit",
 		"lint:js": "eslint --fix --ignore-path .gitignore 'src/**/*.{js,ts,mjs,mts}'",
-		"lint:css": "stylelint **/*.css --fix",
-		"lint": "npm run typecheck && npm run lint:js && npm run lint:css",
+		"lint": "npm run typecheck && npm run lint:js",
 		"lint-staged": "lint-staged",
 		"build": "vite build",
 		"prepreview": "npm run build",
 		"preview": "vite preview --port 3000"
 	},
 	"engines": {
-		"node": ">=20.0.0"
+		"node": ">=22.0.0"
 	},
 	"volta": {
-		"node": "20.11.1"
+		"node": "22.11.0"
 	},
 	"devDependencies": {
-		"@types/node": "^20.14.5",
-		"@typescript-eslint/eslint-plugin": "^7.13.1",
-		"@typescript-eslint/parser": "^7.13.1",
-		"eslint": "^8.57.0",
-		"husky": "^9.0.11",
-		"stylelint": "^16.6.1",
-		"typed-query-selector": "^2.11.2",
-		"typescript": "^5.4.5",
-		"vite": "^5.3.1",
-		"vite-plugin-pwa": "^0.20.0",
-		"workbox-window": "^7.1.0"
-	},
-	"lint-staged": {
-		"*.ts": "eslint --ext .ts --fix",
-		"*.js": "eslint --ext .js --fix",
-		"*.css": "stylelint --fix"
-	},
-	"commitlint": {
-		"extends": [
-			"@commitlint/config-conventional"
-		]
+		"@types/node": "^22.9.0",
+		"@typescript-eslint/eslint-plugin": "^8.13.0",
+		"@typescript-eslint/parser": "^8.13.0",
+		"eslint": "^9.14.0",
+		"globals": "^15.12.0",
+		"husky": "^9.1.6",
+		"typed-query-selector": "^2.12.0",
+		"typescript": "^5.6.3",
+		"vite": "^5.4.10",
+		"vite-plugin-pwa": "^0.20.5",
+		"workbox-window": "^7.3.0"
 	}
 }
