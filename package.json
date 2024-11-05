@@ -15,7 +15,7 @@
 		"prepare": "husky",
 		"start": "vite",
 		"typecheck": "tsc --noEmit",
-		"lint:js": "eslint --fix --ignore-path .gitignore 'src/**/*.{js,ts,mjs,mts}'",
+		"lint:js": "eslint --fix",
 		"lint": "npm run typecheck && npm run lint:js",
 		"build": "vite build",
 		"prepreview": "npm run build",
