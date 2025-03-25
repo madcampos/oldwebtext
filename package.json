@@ -37,7 +37,7 @@
 		"husky": "^9.1.6",
 		"typed-query-selector": "^2.12.0",
 		"typescript": "^5.8.2",
-		"vite": "^6.2.0",
+		"vite": "^6.2.3",
 		"vite-plugin-pwa": "^0.21.1",
 		"workbox-window": "^7.3.0"
 	}
