@@ -109,7 +109,7 @@ const DEFAULT_STYLES: TextStyleList = {
 	'Matrix': createTransformationFunction((char: string) => {
 		const RANDOM_CONST = 7;
 		const MATRIX_MARKS = ['\u033f', '\u0347', '\u033f\u0347', '\u0305', '\u0332', '\u0305\u0332', '\u0336', '\u0347'];
-		const selectedSymbol = MATRIX_MARKS[Math.floor(Math.random() * RANDOM_CONST)];
+		const selectedSymbol = MATRIX_MARKS[Math.floor(Math.random() * RANDOM_CONST)] ?? '';
 
 		return decorateNonCombiningMark(char, selectedSymbol);
 	}),
@@ -148,9 +148,9 @@ const DEFAULT_DECORATORS: DecoratorList = {
 	},
 	'New Year': {
 		// eslint-disable-next-line new-cap
-		left: DEFAULT_STYLES['Lower Numbers'](new Date().getFullYear().toString()),
+		left: DEFAULT_STYLES['Lower Numbers']?.(new Date().getFullYear().toString()) ?? '',
 		// eslint-disable-next-line new-cap
-		right: DEFAULT_STYLES['Upper Numbers']((new Date().getFullYear() + 1).toString())
+		right: DEFAULT_STYLES['Upper Numbers']?.((new Date().getFullYear() + 1).toString()) ?? ''
 	}
 };
 

@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		const label = document.createElement('label');
 
 		label.innerText = style;
-		input.dataset.style = style;
+		input.dataset['style'] = style;
 		input.classList.add('style');
 		input.readOnly = true;
 
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		const label = document.createElement('label');
 
 		label.innerText = decorator;
-		input.dataset.decorator = decorator;
+		input.dataset['decorator'] = decorator;
 		input.classList.add('decorator');
 		input.readOnly = true;
 
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		const originalText = sourceText.value;
 
 		styles.forEach((input) => {
-			const style = input.dataset.style as string;
+			const style = input.dataset['style'] as string;
 
 			input.value = textDecorator.decorateText(originalText, style, {
 				stripAccents: document.querySelector<HTMLInputElement>('#strip-accents')?.checked
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 
 		decorators.forEach((input) => {
-			const decorator = input.dataset.decorator as string;
+			const decorator = input.dataset['decorator'] as string;
 			const { preferedStyle } = textDecorator.getDecorator(decorator) ?? { preferedStyle: 'nostyle' };
 
 			input.value = textDecorator.decorateText(originalText, preferedStyle, {
