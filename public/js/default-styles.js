@@ -1,6 +1,6 @@
-/* eslint-disable max-lines */
+/** @readonly */
 const defaultStyles = {
-	Funky: new Map([
+	'Funky': new Map([
 		['a', 'ล'],
 		['b', 'в'],
 		['c', '¢'],
@@ -28,7 +28,7 @@ const defaultStyles = {
 		['y', 'ý'],
 		['z', 'ž']
 	]),
-	Punk: new Map([
+	'Punk': new Map([
 		['a', 'α'],
 		['e', 'є'],
 		['h', 'н'],
@@ -41,7 +41,7 @@ const defaultStyles = {
 		['t', 'т'],
 		['u', 'υ']
 	]),
-	Stylish: new Map([
+	'Stylish': new Map([
 		['a', 'α'],
 		['e', 'є'],
 		['h', 'Ћ'],
@@ -53,7 +53,7 @@ const defaultStyles = {
 		['s', 's'],
 		['t', 'ŧ']
 	]),
-	Arabic: new Map([
+	'Arabic': new Map([
 		['a', 'آ'],
 		['b', 'أ'],
 		['c', 'ؤ'],
@@ -81,7 +81,7 @@ const defaultStyles = {
 		['y', 'غ'],
 		['z', 'ב']
 	]),
-	L33t: new Map([
+	'L33t': new Map([
 		['a', '4'],
 		['e', '3'],
 		['i', '1'],
@@ -89,7 +89,7 @@ const defaultStyles = {
 		['s', '5'],
 		['t', '7']
 	]),
-	Future: new Map([
+	'Future': new Map([
 		['a', 'α'],
 		['b', 'в'],
 		['c', '૮'],
@@ -112,7 +112,7 @@ const defaultStyles = {
 		['x', '×'],
 		['w', 'ખ']
 	]),
-	Upsidedown: new Map([
+	'Upsidedown': new Map([
 		['a', 'ɐ'],
 		['d', 'p'],
 		['e', 'ǝ'],
@@ -127,7 +127,7 @@ const defaultStyles = {
 		['u', 'n'],
 		['w', 'm']
 	]),
-	Gothic: new Map([
+	'Gothic': new Map([
 		['A', '𝔄'],
 		['B', '𝔅'],
 		['C', 'ℭ'],
@@ -235,7 +235,7 @@ const defaultStyles = {
 		['y', '𝖞'],
 		['z', '𝖟']
 	]),
-	Edgy: new Map([
+	'Edgy': new Map([
 		['A', '𝓪'],
 		['B', '𝓫'],
 		['C', '𝐜'],
@@ -289,7 +289,7 @@ const defaultStyles = {
 		['y', '𝐘'],
 		['z', 'Ž']
 	]),
-	Cursive: new Map([
+	'Cursive': new Map([
 		['A', '𝒜'],
 		['B', '𝐵'],
 		['C', '𝒞'],
@@ -397,7 +397,7 @@ const defaultStyles = {
 		['y', '𝔂'],
 		['z', '𝔃']
 	]),
-	Roman: new Map([
+	'Roman': new Map([
 		['A', '𝔸'],
 		['B', '𝔹'],
 		['C', 'ℂ'],
@@ -451,7 +451,7 @@ const defaultStyles = {
 		['y', '𝕪'],
 		['z', '𝕫']
 	]),
-	Monospaced: new Map([
+	'Monospaced': new Map([
 		['A', 'Ａ'],
 		['B', 'Ｂ'],
 		['C', 'Ｃ'],
@@ -505,7 +505,7 @@ const defaultStyles = {
 		['y', 'ｙ'],
 		['z', 'ｚ']
 	]),
-	Square: new Map([
+	'Square': new Map([
 		['A', '🄰'],
 		['B', '🄱'],
 		['C', '🄲'],
@@ -613,7 +613,7 @@ const defaultStyles = {
 		['y', '🆈'],
 		['z', '🆉']
 	]),
-	Upper: new Map([
+	'Upper': new Map([
 		['A', 'ᴬ'],
 		['B', 'ᴮ'],
 		['C', 'ᶜ'],
@@ -665,7 +665,7 @@ const defaultStyles = {
 		['y', 'ʸ'],
 		['z', 'ᶻ']
 	]),
-	Lower: new Map([
+	'Lower': new Map([
 		['a', 'ₐ'],
 		['e', 'ₑ'],
 		['h', 'ₕ'],
@@ -684,7 +684,7 @@ const defaultStyles = {
 		['v', 'ᵥ'],
 		['x', 'ₓ']
 	]),
-	Circle: new Map([
+	'Circle': new Map([
 		['A', 'Ⓐ'],
 		['B', 'Ⓑ'],
 		['C', 'Ⓒ'],
@@ -766,7 +766,7 @@ const defaultStyles = {
 		['y', '🅨'],
 		['z', '🅩']
 	]),
-	Emoji: new Map([
+	'Emoji': new Map([
 		['a', '🙏'],
 		['b', '🍺'],
 		['c', '🥐'],
@@ -930,7 +930,7 @@ const defaultStyles = {
 		['y', '𝘆'],
 		['z', '𝘇']
 	]),
-	Italic: new Map([
+	'Italic': new Map([
 		['A', '𝘈'],
 		['B', '𝘉'],
 		['C', '𝘊'],
@@ -1038,7 +1038,7 @@ const defaultStyles = {
 		['y', '𝙮'],
 		['z', '𝙯']
 	]),
-	Typewriter: new Map([
+	'Typewriter': new Map([
 		['A', '𝙰'],
 		['B', '𝙱'],
 		['C', '𝙲'],
@@ -1092,7 +1092,7 @@ const defaultStyles = {
 		['y', '𝚢'],
 		['z', '𝚣']
 	]),
-	Striked: new Map([
+	'Striked': new Map([
 		['a', '₳'],
 		['b', '฿'],
 		['c', '₵'],
@@ -1148,7 +1148,7 @@ const defaultStyles = {
 		['y', 'ㄚ'],
 		['z', '乙']
 	]),
-	Japanese: new Map([
+	'Japanese': new Map([
 		['a', 'ﾑ'],
 		['b', '乃'],
 		['c', 'ᄃ'],
@@ -1176,7 +1176,7 @@ const defaultStyles = {
 		['y', 'ﾘ'],
 		['z', '乙']
 	]),
-	Simple: new Map([
+	'Simple': new Map([
 		['a', 'Α'],
 		['e', 'э'],
 		['h', 'н'],
@@ -1188,7 +1188,7 @@ const defaultStyles = {
 		['t', 'Ŧ'],
 		['u', 'u']
 	]),
-	Alien: new Map([
+	'Alien': new Map([
 		['a', 'ค'],
 		['b', '๒'],
 		['d', '๔'],
@@ -1207,7 +1207,7 @@ const defaultStyles = {
 		['t', 'т'],
 		['u', 'ย']
 	]),
-	Street: new Map([
+	'Street': new Map([
 		['a', 'Ǻ'],
 		['b', 'в'],
 		['e', '€'],
@@ -1226,7 +1226,7 @@ const defaultStyles = {
 		['y', '¥'],
 		['z', 'ƶ']
 	]),
-	Greek: new Map([
+	'Greek': new Map([
 		['a', 'Δ'],
 		['b', 'β'],
 		['c', 'Ć'],
@@ -1254,7 +1254,7 @@ const defaultStyles = {
 		['y', '¥'],
 		['z', 'Ž']
 	]),
-	Egiptian: new Map([
+	'Egiptian': new Map([
 		['a', 'ɑ'],
 		['b', 'ɓ'],
 		['d', 'ɗ'],
@@ -1270,14 +1270,14 @@ const defaultStyles = {
 		['s', 'ร'],
 		['v', 'ѵ']
 	]),
-	French: new Map([
+	'French': new Map([
 		['a', 'á'],
 		['e', 'è'],
 		['i', 'í'],
 		['o', 'õ'],
 		['u', 'û']
 	]),
-	Swedish: new Map([
+	'Swedish': new Map([
 		['a', 'ắ'],
 		['b', 'ß'],
 		['c', 'ç'],
@@ -1292,7 +1292,7 @@ const defaultStyles = {
 		['u', 'ų'],
 		['y', 'ý']
 	]),
-	Hebrew: new Map([
+	'Hebrew': new Map([
 		['a', 'פ'],
 		['c', 'כ'],
 		['f', 'ל'],
@@ -1307,7 +1307,7 @@ const defaultStyles = {
 		['w', 'ש'],
 		['y', 'צ']
 	]),
-	Indian: new Map([
+	'Indian': new Map([
 		['a', 'ઊ'],
 		['b', '३'],
 		['c', 'ट'],
@@ -1335,7 +1335,7 @@ const defaultStyles = {
 		['y', 'ए'],
 		['z', 'ङ']
 	]),
-	Russian: new Map([
+	'Russian': new Map([
 		['a', 'д'],
 		['b', 'в'],
 		['e', 'є'],
@@ -1349,7 +1349,7 @@ const defaultStyles = {
 		['w', 'ш'],
 		['x', 'ж']
 	]),
-	Neon: new Map([
+	'Neon': new Map([
 		['a', 'ᗩ'],
 		['b', 'ᙖ'],
 		['c', 'ᑕ'],
@@ -1377,7 +1377,7 @@ const defaultStyles = {
 		['y', 'ϒ'],
 		['z', '乙']
 	]),
-	Runes: new Map([
+	'Runes': new Map([
 		['a', '𐤠'],
 		['b', '𐌁'],
 		['c', '𐌂'],
@@ -1433,7 +1433,7 @@ const defaultStyles = {
 		['y', '𐍅'],
 		['z', '𐌶']
 	]),
-	Squiggle: new Map([
+	'Squiggle': new Map([
 		['a', 'ꋫ'],
 		['b', 'ꃃ'],
 		['c', 'ꏸ'],
@@ -1489,7 +1489,7 @@ const defaultStyles = {
 		['y', 'ꌦ'],
 		['z', 'ꁴ']
 	]),
-	Rollercoaster: new Map([
+	'Rollercoaster': new Map([
 		['a', 'ₐ'],
 		['b', 'ᴮ'],
 		['c', 'ᶜ'],

@@ -2,43 +2,20 @@
 	"name": "oldwebtext",
 	"version": "2.0.0",
 	"description": "Text transformer for the cool kids",
-	"main": "index.html",
+	"main": "public/index.html",
 	"type": "module",
 	"author": "madcampos",
 	"license": "MIT",
-	"homepage": "https://github.com/madcampos/oldwebtext#readme",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/madcampos/oldwebtext.git"
+	"engines": {
+		"node": ">=24.0.0"
 	},
 	"scripts": {
-		"prepare": "husky",
-		"start": "vite",
 		"typecheck": "tsc --noEmit",
-		"lint:js": "eslint --fix",
-		"lint": "npm run typecheck && npm run lint:js",
 		"format": "dprint fmt",
-		"build": "vite build",
-		"prepreview": "npm run build",
-		"preview": "vite preview --port 3000"
-	},
-	"engines": {
-		"node": ">=22.0.0"
-	},
-	"volta": {
-		"node": "22.11.0"
+		"deploy": "wrangler deploy --minify"
 	},
 	"devDependencies": {
-		"@types/node": "^25.2.2",
-		"@typescript-eslint/eslint-plugin": "^8.54.0",
-		"@typescript-eslint/parser": "^8.29.1",
-		"eslint": "^10.0.0",
-		"globals": "^17.3.0",
-		"husky": "^9.1.7",
-		"typed-query-selector": "^2.12.0",
 		"typescript": "^5.9.2",
-		"vite": "^7.3.1",
-		"vite-plugin-pwa": "^1.2.0",
-		"workbox-window": "^7.3.0"
+		"wrangler": "4.81.0"
 	}
 }

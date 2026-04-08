@@ -2,9 +2,9 @@ import { TextDecorator } from './lib';
 
 document.addEventListener('DOMContentLoaded', () => {
 	const textDecorator = new TextDecorator();
-	const sourceText = document.querySelector('#source-text') as HTMLInputElement;
-	const stylesContainer = document.querySelector('#styles') as HTMLFieldSetElement;
-	const decoratorsContainer = document.querySelector('#decorators') as HTMLFieldSetElement;
+	const sourceText = /** @type {HTMLInputElement} */ (document.querySelector('#source-text'));
+	const stylesContainer = /** @type {HTMLFieldSetElement} */ (document.querySelector('#styles'));
+	const decoratorsContainer = /** @type {HTMLFieldSetElement} */ (document.querySelector('#decorators'));
 
 	document.querySelector('#styles-loader')?.remove();
 
@@ -45,26 +45,26 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 
 	const updateStyles = () => {
-		const styles = document.querySelectorAll<HTMLInputElement>('.style');
-		const decorators = document.querySelectorAll<HTMLInputElement>('.decorator');
+		const styles = /** @type {NodeListOf<HTMLInputElement>} */ (document.querySelectorAll('.style'));
+		const decorators = /** @type {NodeListOf<HTMLInputElement>} */ (document.querySelectorAll('.decorator'));
 		const originalText = sourceText.value;
 
 		styles.forEach((input) => {
-			const style = input.dataset['style'] as string;
+			const style = input.dataset['style'];
 
 			input.value = textDecorator.decorateText(originalText, style, {
-				stripAccents: document.querySelector<HTMLInputElement>('#strip-accents')?.checked
+				stripAccents: (/** @type {HTMLInputElement} */ (document.querySelector('#strip-accents')))?.checked
 			});
 		});
 
 		decorators.forEach((input) => {
-			const decorator = input.dataset['decorator'] as string;
+			const decorator = input.dataset['decorator'] ?? '';
 			const { preferedStyle } = textDecorator.getDecorator(decorator) ?? { preferedStyle: 'nostyle' };
 
 			input.value = textDecorator.decorateText(originalText, preferedStyle, {
 				leftDecorator: decorator,
 				rightDecorator: decorator,
-				stripAccents: document.querySelector<HTMLInputElement>('#strip-accents')?.checked
+				stripAccents: (/** @type {HTMLInputElement} */ (document.querySelector('#strip-accents')))?.checked
 			});
 		});
 	};

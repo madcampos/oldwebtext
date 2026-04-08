@@ -1,5 +1,6 @@
+/** @readonly */
 const defaultDecorators = {
-	Bars: {
+	'Bars': {
 		left: '▂▃▅▆█ ',
 		right: ' █▆▅▃▂',
 		preferedStyle: 'Monospaced'
@@ -9,37 +10,37 @@ const defaultDecorators = {
 		right: ' █ ▇ ▆ ▅ ▄ ▃ ▂',
 		preferedStyle: 'Monospaced'
 	},
-	Music: {
+	'Music': {
 		left: 'ılı.lıllılı.ıllı.',
 		right: '.ıllı.ılıllıl.ılı',
 		preferedStyle: 'Monospaced'
 	},
-	Fenced: {
+	'Fenced': {
 		left: 'ܔܢܜܔܔܢܜܔܔܢܜܔ',
 		right: 'ܔܢܜܔܔܢܜܔܔܢܜܔ',
 		preferedStyle: 'Stylish'
 	},
-	Copyright: {
+	'Copyright': {
 		left: '©',
 		right: '©',
 		preferedStyle: 'Circle'
 	},
-	Trademark: {
+	'Trademark': {
 		left: '™',
 		right: '™',
 		preferedStyle: 'Square'
 	},
-	Registered: {
+	'Registered': {
 		left: '®',
 		right: '®',
 		preferedStyle: 'Circle'
 	},
-	Curly: {
+	'Curly': {
 		left: '(¯`·._.·[ ',
 		right: ' ]·._.·´¯)',
 		preferedStyle: 'Stylish'
 	},
-	Whip: {
+	'Whip': {
 		left: '(¯`·._) ',
 		right: ' (_.·´¯)',
 		preferedStyle: 'Cursive'
@@ -54,7 +55,7 @@ const defaultDecorators = {
 		right: ' •·.·´¯`·.·•',
 		preferedStyle: 'Funky'
 	},
-	Wavy: {
+	'Wavy': {
 		left: '`·.¸¸.·´´¯`··._.· ',
 		right: ' ·._.··´´¯`·.¸¸.·´',
 		preferedStyle: 'Edgy'
@@ -79,7 +80,7 @@ const defaultDecorators = {
 		right: ' ᵒᴼᵒ▫ₒₒ▫ᵒᴼᵒ▫ₒₒ▫ᵒᴼᵒ▫▫·∙∙',
 		preferedStyle: 'Cursive Bold'
 	},
-	Fishy: {
+	'Fishy': {
 		left: '<º))))><.·´¯`·. ',
 		right: ' .·´¯`·.><((((º>',
 		preferedStyle: 'Street'
@@ -89,22 +90,22 @@ const defaultDecorators = {
 		right: ' <-·´¯`·.',
 		preferedStyle: 'Roman'
 	},
-	Pierced: {
+	'Pierced': {
 		left: '- -¤--^] ',
 		right: ' ]^--¤- -',
 		preferedStyle: 'Alien'
 	},
-	Patched: {
+	'Patched': {
 		left: '-·=»‡«=·- ',
 		right: ' -·=»‡«=·-',
 		preferedStyle: 'Serif Bold'
 	},
-	Straight: {
+	'Straight': {
 		left: '- - --^[ ',
 		right: ' ]]^--¤- -',
 		preferedStyle: 'Serif'
 	},
-	Sewed: {
+	'Sewed': {
 		left: '––––•(-• ',
 		right: ' •-)•––––',
 		preferedStyle: 'Alien'
@@ -124,12 +125,12 @@ const defaultDecorators = {
 		right: ' O.o°•',
 		preferedStyle: 'Stylish'
 	},
-	Sound: {
+	'Sound': {
 		left: 'Oº°‘¨ ',
 		right: ' ¨‘°ºO',
 		preferedStyle: 'Street'
 	},
-	Heart: {
+	'Heart': {
 		left: '(¯`•¸·´¯) ',
 		right: ' (¯`·¸•´¯)',
 		preferedStyle: 'Punk'
@@ -139,7 +140,7 @@ const defaultDecorators = {
 		right: ' «-(¯`v´¯)-«',
 		preferedStyle: 'Cursive'
 	},
-	Arrows: {
+	'Arrows': {
 		left: '➶➶➶➶➶ ',
 		right: ' ➷➷➷➷➷',
 		preferedStyle: 'Cursive Bold'
@@ -159,17 +160,17 @@ const defaultDecorators = {
 		right: ' ﮩﮩـ٨ﮩﮩـ٨ﮩ♥',
 		preferedStyle: 'Cursive'
 	},
-	Siringe: {
+	'Siringe': {
 		left: '╏╠══[𝍖𝍖𝍖𝍖 ',
 		right: ' 𝍖𝍖𝍖𝍖]      💦',
 		preferedStyle: 'Serif Bold'
 	},
-	Desert: {
+	'Desert': {
 		left: 'ⲯ﹍︿﹍︿﹍ ',
 		right: ' ﹍ⲯ﹍ⲯ﹍︿﹍☼',
 		preferedStyle: 'Monospaced'
 	},
-	Peacock: {
+	'Peacock': {
 		left: '꧁༺ ',
 		right: ' ༻꧂',
 		preferedStyle: 'Cursive Bold'
@@ -179,7 +180,7 @@ const defaultDecorators = {
 		right: ' .◦°˚°◦✬꧂☆',
 		preferedStyle: 'Cursive'
 	},
-	Fade: {
+	'Fade': {
 		left: '⠐⢾░▒▓██ ',
 		right: ' ██▓▒­░⡷⠂',
 		preferedStyle: 'Neon'
