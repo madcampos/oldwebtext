@@ -1,6 +1,8 @@
 {
 	"id": "/?id=00684331-2a10-4b94-b855-519b3446b49d",
 	"scope": "/?utm_source=pwa&utm_medium=install&utm_campaign=web_app_manifest",
+	"start_url": "/?utm_source=pwa&utm_medium=start_url&utm_campaign=web_app_manifest",
+	"scope_extensions": [{ "type": "origin", "origin": "https://owt.madcampos.dev/" }],
 	"name": "Old Web Text",
 	"short_name": "OWT",
 	"lang": "en-US",
@@ -8,42 +10,115 @@
 	"description": "A text styles generator for the cool kids.",
 	"categories": ["entertainment", "utilities", "text"],
 	"display": "standalone",
-	"orientation": "portrait",
 	"display_override": ["window-controls-overlay"],
+	"orientation": "portrait",
 	"background_color": "#f5f5f5",
 	"theme_color": "#2e8b57",
+	"color_scheme_dark": {
+		"theme_color": "#2e8b57",
+		"background_color": "#f5f5f5"
+	},
 	"prefer_related_applications": false,
 	"icons": [
 		{
-			"src": "icons/transparent/manifest-icon-192.png",
-			"sizes": "192x192",
+			"src": "/icons/icon.svg",
+			"sizes": "any",
+			"type": "image/svg+xml",
+			"purpose": "any"
+		},
+		{
+			"src": "/icons/icon-1024x1024.png",
+			"sizes": "1024x1024",
 			"type": "image/png",
 			"purpose": "any"
 		},
 		{
-			"src": "icons/maskable/manifest-icon-192.png",
-			"sizes": "192x192",
-			"type": "image/png",
-			"purpose": "maskable"
-		},
-		{
-			"src": "icons/transparent/manifest-icon-512.png",
+			"src": "/icons/icon-512x512.png",
 			"sizes": "512x512",
 			"type": "image/png",
 			"purpose": "any"
 		},
 		{
-			"src": "icons/maskable/manifest-icon-512.png",
+			"src": "/icons/icon-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "any"
+		},
+		{
+			"src": "/icons/icon-mask.svg",
+			"sizes": "any",
+			"type": "image/svg+xml",
+			"purpose": "maskable"
+		},
+		{
+			"src": "/icons/icon-mask-1024x1024.png",
+			"sizes": "1024x1024",
+			"type": "image/png",
+			"purpose": "maskable"
+		},
+		{
+			"src": "/icons/icon-mask-512x512.png",
 			"sizes": "512x512",
 			"type": "image/png",
 			"purpose": "maskable"
+		},
+		{
+			"src": "/icons/icon-mask-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "maskable"
+		},
+		{
+			"src": "/icons/icon-mono.svg",
+			"sizes": "any",
+			"type": "image/svg+xml",
+			"purpose": "monochrome"
+		},
+		{
+			"src": "/icons/icon-mono-1024x1024.png",
+			"sizes": "1024x1024",
+			"type": "image/png",
+			"purpose": "monochrome"
+		},
+		{
+			"src": "/icons/icon-mono-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "monochrome"
+		},
+		{
+			"src": "/icons/icon-mono-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "monochrome"
+		},
+		{
+			"src": "/icons/icon-mask-mono.svg",
+			"sizes": "any",
+			"type": "image/svg+xml",
+			"purpose": "maskable monochrome"
+		},
+		{
+			"src": "/icons/icon-mask-mono-1024x1024.png",
+			"sizes": "1024x1024",
+			"type": "image/png",
+			"purpose": "maskable monochrome"
+		},
+		{
+			"src": "/icons/icon-mask-mono-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "maskable monochrome"
+		},
+		{
+			"src": "/icons/icon-mask-mono-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "maskable monochrome"
 		}
 	],
 	"handle_links": "preffered",
-	"launch_handler": {
-		"client_mode": "navigate-existing"
-	},
-	"edge_side_panel": {
-		"preffer_width": 460
-	}
+	"launch_handler": { "client_mode": "navigate-existing" },
+	"protocol_handlers": [],
+	"edge_side_panel": { "preffer_width": 460 }
 }
