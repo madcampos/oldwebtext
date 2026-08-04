@@ -1,4 +1,5 @@
-import { TextDecorator } from './lib';
+// oxlint-disable typescript/no-unsafe-type-assertion
+import { TextDecorator } from './lib.js';
 
 document.addEventListener('DOMContentLoaded', () => {
 	const textDecorator = new TextDecorator();
@@ -53,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			const style = input.dataset['style'];
 
 			input.value = textDecorator.decorateText(originalText, style, {
-				stripAccents: (/** @type {HTMLInputElement} */ (document.querySelector('#strip-accents')))?.checked
+				stripAccents: (/** @type {HTMLInputElement} */ (document.querySelector('#strip-accents'))).checked
 			});
 		});
 
@@ -64,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			input.value = textDecorator.decorateText(originalText, preferedStyle, {
 				leftDecorator: decorator,
 				rightDecorator: decorator,
-				stripAccents: (/** @type {HTMLInputElement} */ (document.querySelector('#strip-accents')))?.checked
+				stripAccents: (/** @type {HTMLInputElement} */ (document.querySelector('#strip-accents'))).checked
 			});
 		});
 	};

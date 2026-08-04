@@ -1,5 +1,6 @@
-import defaultDecorators from './default-decorators';
-import defaultStyles from './default-styles';
+// oxlint-disable typescript/no-misused-spread
+import defaultDecorators from './default-decorators.js';
+import defaultStyles from './default-styles.js';
 
 /**
  * @typedef {(text: string, stripAccents?: boolean) => string} StyleFunction
@@ -96,14 +97,13 @@ export function createTransformationFunction(func) {
 	};
 }
 
+/** @readonly */
 const DEFAULT_STYLES = {
 	// Mapping functions
-	...Object.entries(defaultStyles).reduce((styles, [name, map]) => {
-		// @ts-expect-error
-		styles[name] = createMappingFunction(map);
-
-		return styles;
-	}, /** @type {Record<keyof typeof defaultStyles, StyleFunction>} */ ({})),
+	// oxlint-disable-next-line typescript/no-unsafe-type-assertion
+	...(/** @type {Record<keyof typeof defaultStyles, StyleFunction>} */ (Object.fromEntries(
+		Object.entries(defaultStyles).map(([name, map]) => [name, createMappingFunction(map)])
+	))),
 
 	// Transformation functions
 	'Parens': createTransformationFunction((char) => encloseNonCombiningMark(char, '〖', '〗')),
@@ -144,12 +144,7 @@ const DEFAULT_STYLES = {
 
 /** @readonly */
 const DEFAULT_DECORATORS = {
-	...Object.entries(defaultDecorators).reduce((decorators, [name, decorator]) => {
-		// @ts-expect-error
-		decorators[name] = decorator;
-
-		return decorators;
-	}, /** @type {Record<keyof typeof defaultDecorators, Decorator>} */ ({})),
+	...defaultDecorators,
 
 	'Next Year': {
 		left: (new Date().getFullYear() + 1).toString(),
@@ -160,8 +155,10 @@ const DEFAULT_DECORATORS = {
 		right: new Date().getFullYear().toString()
 	},
 	'New Year': {
-		left: DEFAULT_STYLES['Lower Numbers']?.(new Date().getFullYear().toString()) ?? '',
-		right: DEFAULT_STYLES['Upper Numbers']?.((new Date().getFullYear() + 1).toString()) ?? ''
+		// oxlint-disable-next-line new-cap
+		left: DEFAULT_STYLES['Lower Numbers'](new Date().getFullYear().toString()),
+		// oxlint-disable-next-line new-cap
+		right: DEFAULT_STYLES['Upper Numbers']((new Date().getFullYear() + 1).toString())
 	}
 };
 

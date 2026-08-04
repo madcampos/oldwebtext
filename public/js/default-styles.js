@@ -1,3 +1,5 @@
+// oxlint-disable max-lines
+
 /** @readonly */
 const defaultStyles = {
 	'Funky': new Map([
@@ -1543,4 +1545,5 @@ const defaultStyles = {
 	])
 };
 
+// oxlint-disable-next-line import/no-default-export
 export default defaultStyles;

@@ -1,7 +1,7 @@
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"name": "old-web-text",
-	"compatibility_date": "2026-04-07",
+	"compatibility_date": "2026-05-30",
 	"compatibility_flags": ["nodejs_compat"],
 	"keep_vars": false,
 	"send_metrics": false,
@@ -10,6 +10,10 @@
 	"workers_dev": false,
 	"preview_urls": false,
 	"route": { "pattern": "owt.madcampos.dev", "custom_domain": true },
+	"observability": {
+		"enabled": true,
+		"head_sampling_rate": 1
+	},
 	"dev": {
 		"ip": "localhost",
 		"port": 1234,
@@ -18,9 +22,22 @@
 	},
 	"assets": {
 		"directory": "./public",
+		"binding": "Assets",
 		"run_worker_first": false,
 		"html_handling": "auto-trailing-slash",
 		"not_found_handling": "404-page"
 	},
-	"vars": { "NODE_ENV": "production" }
+	"vars": { "NODE_ENV": "production" },
+	"env": {
+		"local": {
+			"assets": {
+				"directory": "./public",
+				"binding": "Assets",
+				"run_worker_first": false,
+				"html_handling": "auto-trailing-slash",
+				"not_found_handling": "404-page"
+			},
+			"vars": { "NODE_ENV": "local" }
+		}
+	}
 }

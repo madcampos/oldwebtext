@@ -53,7 +53,7 @@ body {
 	accent-color: var(--theme-color);
 }
 
-body *, body *::after, body *::before {
+*, *::after, *::before {
 	box-sizing: inherit;
 	font-family: inherit;
 }

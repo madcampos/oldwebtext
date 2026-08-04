@@ -1,6 +1,5 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-US" itemscope itemtype="https://schema.org/WebPage">
-
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -9,38 +8,51 @@
 		<title>Old Web Text</title>
 
 		<!-- App Metadata -->
-		<link rel="icon" href="icons/favicon.svg" />
-		<meta name="theme-color" content="#2e8b57">
+		<link rel="icon" href="/icons/favicon.svg" />
+		<meta name="theme-color" content="#2e8b57" />
+		<link rel="manifest" href="/site.webmanifest" />
 
 		<!-- Social metadata -->
 		<meta name="keywords" itemprop="keywords" content="entertainment, utilities, text" />
 
 		<meta property="og:title" name="twitter:title" itemprop="name" content="Old Web Text" />
-		<meta property="og:description" name="description" itemprop="abstract" content="A text styles generator for the cool kids." />
+		<meta
+			property="og:description"
+			name="description"
+			itemprop="abstract"
+			content="A text styles generator for the cool kids."
+		/>
 		<meta property="og:image" name="twitter:image" itemprop="image" content="https://owt.madcampos.dev/icons/maskable/manifest-icon-512.png" />
 		<meta property="og:type" content="website" />
 		<meta property="og:locale" itemprop="inLanguage" content="en_US" />
 		<meta property="og:url" itemprop="url" content="https://owt.madcampos.dev/" />
 		<meta name="twitter:card" content="summary" />
-		<meta name="twitter:dnt" content="on">
+		<meta name="twitter:dnt" content="on" />
 
-		<meta name="pinterest" content="nopin" description="Pintrest not allowed here!">
+		<meta name="pinterest" content="nopin" description="Pintrest not allowed here!" />
 
-		<!-- Apple icons -->
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<!-- Site configuration -->
+		<meta name="referrer" content="no-referrer" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="google" content="notranslate" />
+		<link rel="license" href="/LICENSE.txt" />
 
-		<meta name="google" content="nositelinkssearchbox"/>
-		<meta name="google" content="notranslate"/>
+		<!-- Changelog -->
+		<link rel="alternate" type="application/rss+xml" href="/changelog.rss" title="Changelog (Version History)" />
+
+		<!-- Apple metadata -->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
 		<!-- Styles -->
-		<link rel="stylesheet" href="./css/base.css"/>
+		<link rel="stylesheet" href="./css/index.css" />
 	</head>
 	<body class="notranslate" translate="no">
 		<h1>Transform your text!</h1>
 
 		<label for="source-text">Your text</label>
-		<input type="text" id="source-text" name="source-text" autofocus autocomplete="off">
-		<label><input type="checkbox" id="strip-accents" checked/> Strip all accents (E.g.: à, á, â, ã = a)</label>
+		<input type="text" id="source-text" name="source-text" autofocus autocomplete="off" />
+		<label><input type="checkbox" id="strip-accents" checked /> Strip all accents (E.g.: à, á, â, ã = a)</label>
 
 		<fieldset id="styles">
 			<legend>Styles</legend>
