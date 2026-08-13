@@ -6,9 +6,754 @@
 	<link>https://owt.madcampos.dev/</link>
 
 	<item>
-		<title></title>
-		<pubDate></pubDate>
+		<title>v3.1.0</title>
+		<pubDate>2024-11-05T00:51:03-05:00</pubDate>
 		<description><![CDATA[
+			<a href="https://github.com/madcampos/oldwebtext/compare/v3.0.1...v3.1.0">compare changes</a>
+
+
+			<h2>Enhancements</h2>
+
+			<ul>
+				<li>update changelog file (<a href="https://github.com/madcampos/oldwebtext/commit/26be685">26be685</a>)</li>
+				<li>update manifest and base icon (<a href="https://github.com/madcampos/oldwebtext/commit/4013291">4013291</a>)</li>
+				<li>update build process and remove dependencies (<a href="https://github.com/madcampos/oldwebtext/commit/f16c6f8">f16c6f8</a>)</li>
+				<li>update eslint config (<a href="https://github.com/madcampos/oldwebtext/commit/2422d59">2422d59</a>)</li>
+				<li>small tweaks to app (<a href="https://github.com/madcampos/oldwebtext/commit/032c5c1">032c5c1</a>)</li>
+				<li>update url references (<a href="https://github.com/madcampos/oldwebtext/commit/59ba73d">59ba73d</a>)</li>
+				<li>update readme (<a href="https://github.com/madcampos/oldwebtext/commit/fb1625a">fb1625a</a>)</li>
+				<li>remove apple icons (<a href="https://github.com/madcampos/oldwebtext/commit/3c4db2d">3c4db2d</a>)</li>
+			</ul>
+
+			<h2>Fixes</h2>
+
+			<ul>
+				<li>make package private and remove extra logs (<a href="https://github.com/madcampos/oldwebtext/commit/cf8ff82">cf8ff82</a>)</li>
+				<li>linting errors (<a href="https://github.com/madcampos/oldwebtext/commit/ddc4700">ddc4700</a>)</li>
+				<li>resolve linting issues (<a href="https://github.com/madcampos/oldwebtext/commit/b1515ac">b1515ac</a>)</li>
+			</ul>
+
+			<h2>Chores &amp; Tasks</h2>
+
+			<ul>
+				<li>update project structure and dependencies (<a href="https://github.com/madcampos/oldwebtext/commit/bfbf3d3">bfbf3d3</a>)</li>
+				<li>**deps-dev**: bump minimatch from 5.1.6 to 5.1.9 (<a href="https://github.com/madcampos/oldwebtext/commit/f9a1678">f9a1678</a>)</li>
+				<li>**deps**: bump rollup (<a href="https://github.com/madcampos/oldwebtext/commit/cf9b351">cf9b351</a>)</li>
+				<li>**deps-dev**: bump lodash from 4.17.21 to 4.17.23 (<a href="https://github.com/madcampos/oldwebtext/commit/1bfa4e4">1bfa4e4</a>)</li>
+				<li>update tsconfig (<a href="https://github.com/madcampos/oldwebtext/commit/c812552">c812552</a>)</li>
+				<li>update dependabot config (<a href="https://github.com/madcampos/oldwebtext/commit/ed063f9">ed063f9</a>)</li>
+				<li>update dependabot config (<a href="https://github.com/madcampos/oldwebtext/commit/17f8b07">17f8b07</a>)</li>
+				<li>**deps-dev**: bump js-yaml from 4.1.0 to 4.1.1 (<a href="https://github.com/madcampos/oldwebtext/commit/1d1d9d1">1d1d9d1</a>)</li>
+				<li>**deps-dev**: bump vite from 7.1.5 to 7.1.11 (<a href="https://github.com/madcampos/oldwebtext/commit/7a5b74e">7a5b74e</a>)</li>
+				<li>**deps-dev**: bump vite from 7.1.4 to 7.1.5 (<a href="https://github.com/madcampos/oldwebtext/commit/733b204">733b204</a>)</li>
+				<li>**deps-dev**: bump vite from 6.3.3 to 6.3.4 (<a href="https://github.com/madcampos/oldwebtext/commit/4634fcd">4634fcd</a>)</li>
+				<li>update packages and infrastructure (<a href="https://github.com/madcampos/oldwebtext/commit/3b696e0">3b696e0</a>)</li>
+				<li>**deps-dev**: bump vite from 6.2.5 to 6.2.6 (<a href="https://github.com/madcampos/oldwebtext/commit/445380a">445380a</a>)</li>
+				<li>**deps-dev**: bump vite from 6.2.4 to 6.2.5 (<a href="https://github.com/madcampos/oldwebtext/commit/cfbb3b8">cfbb3b8</a>)</li>
+				<li>**deps-dev**: bump vite from 6.2.0 to 6.2.4 (<a href="https://github.com/madcampos/oldwebtext/commit/20cf56d">20cf56d</a>)</li>
+				<li>**deps-dev**: bump vite from 6.0.1 to 6.0.11 (<a href="https://github.com/madcampos/oldwebtext/commit/30beadf">30beadf</a>)</li>
+				<li>add format command (<a href="https://github.com/madcampos/oldwebtext/commit/18463ae">18463ae</a>)</li>
+				<li>remove stylelint (<a href="https://github.com/madcampos/oldwebtext/commit/dc6faf1">dc6faf1</a>)</li>
+				<li>fix eslint command (<a href="https://github.com/madcampos/oldwebtext/commit/fa459b9">fa459b9</a>)</li>
+				<li>update git hooks (<a href="https://github.com/madcampos/oldwebtext/commit/b09d4bb">b09d4bb</a>)</li>
+				<li>update packages (<a href="https://github.com/madcampos/oldwebtext/commit/9ce9986">9ce9986</a>)</li>
+				<li>Update dependabot.yml (<a href="https://github.com/madcampos/oldwebtext/commit/ee8aeb7">ee8aeb7</a>)</li>
+				<li>update dependencies (<a href="https://github.com/madcampos/oldwebtext/commit/176c2f0">176c2f0</a>)</li>
+				<li>update packages (<a href="https://github.com/madcampos/oldwebtext/commit/35728be">35728be</a>)</li>
+				<li>update github pages actions (<a href="https://github.com/madcampos/oldwebtext/commit/6007a2c">6007a2c</a>)</li>
+				<li>cleanup packages (<a href="https://github.com/madcampos/oldwebtext/commit/b51b657">b51b657</a>)</li>
+			</ul>
+
+			<h2>Miscellaneous</h2>
+
+			<ul>
+				<li>Merge pull request #62 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-97347d3346 (<a href="https://github.com/madcampos/oldwebtext/commit/20f721d">20f721d</a>)</li>
+				<li>[dependency update]: Bump wrangler in the dev-dependencies group (<a href="https://github.com/madcampos/oldwebtext/commit/2728e7f">2728e7f</a>)</li>
+				<li>Merge pull request #61 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-b1d1ed2555 (<a href="https://github.com/madcampos/oldwebtext/commit/9d21181">9d21181</a>)</li>
+				<li>[dependency update]: Bump wrangler in the dev-dependencies group (<a href="https://github.com/madcampos/oldwebtext/commit/d294139">d294139</a>)</li>
+				<li>Merge pull request #60 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-574b0d5a74 (<a href="https://github.com/madcampos/oldwebtext/commit/b61b228">b61b228</a>)</li>
+				<li>[dependency update]: bump typescript in the dev-dependencies group (<a href="https://github.com/madcampos/oldwebtext/commit/0ed2bbd">0ed2bbd</a>)</li>
+				<li>Merge pull request #55 from madcampos/dependabot/npm_and_yarn/minimatch-5.1.9 (<a href="https://github.com/madcampos/oldwebtext/commit/77c8034">77c8034</a>)</li>
+				<li>Merge pull request #52 from madcampos/dependabot/npm_and_yarn/multi-571506d351 (<a href="https://github.com/madcampos/oldwebtext/commit/da20aa3">da20aa3</a>)</li>
+				<li>Merge pull request #54 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-27104c84d2 (<a href="https://github.com/madcampos/oldwebtext/commit/6bd9671">6bd9671</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/oldwebtext/commit/b3e4c8d">b3e4c8d</a>)</li>
+				<li>Merge pull request #51 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-7dced69c92 (<a href="https://github.com/madcampos/oldwebtext/commit/e08076b">e08076b</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/oldwebtext/commit/ba41725">ba41725</a>)</li>
+				<li>Merge pull request #50 from madcampos/dependabot/npm_and_yarn/lodash-4.17.23 (<a href="https://github.com/madcampos/oldwebtext/commit/a1fd502">a1fd502</a>)</li>
+				<li>Merge pull request #49 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-bc50e69e4f (<a href="https://github.com/madcampos/oldwebtext/commit/17f75a8">17f75a8</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 5 updates (<a href="https://github.com/madcampos/oldwebtext/commit/08353e0">08353e0</a>)</li>
+				<li>Merge pull request #48 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-e9b0bbd067 (<a href="https://github.com/madcampos/oldwebtext/commit/1fd7ac9">1fd7ac9</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group across 1 directory with 2 updates (<a href="https://github.com/madcampos/oldwebtext/commit/2373aac">2373aac</a>)</li>
+				<li>Merge pull request #46 from madcampos/dependabot/npm_and_yarn/js-yaml-4.1.1 (<a href="https://github.com/madcampos/oldwebtext/commit/3bd9874">3bd9874</a>)</li>
+				<li>Merge pull request #45 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-a281602c46 (<a href="https://github.com/madcampos/oldwebtext/commit/bcf9291">bcf9291</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 6 updates (<a href="https://github.com/madcampos/oldwebtext/commit/323575d">323575d</a>)</li>
+				<li>Merge pull request #44 from madcampos/dependabot/npm_and_yarn/vite-7.1.11 (<a href="https://github.com/madcampos/oldwebtext/commit/7e90099">7e90099</a>)</li>
+				<li>Merge pull request #43 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-187b6c991d (<a href="https://github.com/madcampos/oldwebtext/commit/2fd9d0f">2fd9d0f</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 5 updates (<a href="https://github.com/madcampos/oldwebtext/commit/c624587">c624587</a>)</li>
+				<li>Merge pull request #42 from madcampos/dependabot/npm_and_yarn/vite-7.1.5 (<a href="https://github.com/madcampos/oldwebtext/commit/fb6f875">fb6f875</a>)</li>
+				<li>Merge pull request #41 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-793c22c2c1 (<a href="https://github.com/madcampos/oldwebtext/commit/59a65b4">59a65b4</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 5 updates (<a href="https://github.com/madcampos/oldwebtext/commit/4377a23">4377a23</a>)</li>
+				<li>Merge pull request #40 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-93c73f12c2 (<a href="https://github.com/madcampos/oldwebtext/commit/ba98fb5">ba98fb5</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 5 updates (<a href="https://github.com/madcampos/oldwebtext/commit/79e33a3">79e33a3</a>)</li>
+				<li>Merge pull request #39 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-c2be55a223 (<a href="https://github.com/madcampos/oldwebtext/commit/94575c8">94575c8</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 6 updates (<a href="https://github.com/madcampos/oldwebtext/commit/891dc5e">891dc5e</a>)</li>
+				<li>Merge pull request #38 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-3b1aa7447e (<a href="https://github.com/madcampos/oldwebtext/commit/98dc9d3">98dc9d3</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/oldwebtext/commit/833790b">833790b</a>)</li>
+				<li>Merge pull request #37 from madcampos/dependabot/npm_and_yarn/vite-6.3.4 (<a href="https://github.com/madcampos/oldwebtext/commit/42c11a2">42c11a2</a>)</li>
+				<li>Merge pull request #36 from madcampos/dependabot/npm_and_yarn/vite-6.2.6 (<a href="https://github.com/madcampos/oldwebtext/commit/f70882b">f70882b</a>)</li>
+				<li>Merge pull request #35 from madcampos/dependabot/npm_and_yarn/vite-6.2.5 (<a href="https://github.com/madcampos/oldwebtext/commit/40330b2">40330b2</a>)</li>
+				<li>Merge pull request #34 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-787110165f (<a href="https://github.com/madcampos/oldwebtext/commit/eb8e1ea">eb8e1ea</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/oldwebtext/commit/26b79c0">26b79c0</a>)</li>
+				<li>Merge pull request #33 from madcampos/dependabot/npm_and_yarn/vite-6.2.4 (<a href="https://github.com/madcampos/oldwebtext/commit/e7deb8e">e7deb8e</a>)</li>
+				<li>Merge pull request #31 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-bc9b59c57a (<a href="https://github.com/madcampos/oldwebtext/commit/8393605">8393605</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 6 updates (<a href="https://github.com/madcampos/oldwebtext/commit/f7bd8be">f7bd8be</a>)</li>
+				<li>Merge pull request #30 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-1a36ff76b2 (<a href="https://github.com/madcampos/oldwebtext/commit/0234cda">0234cda</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/oldwebtext/commit/a43f4cf">a43f4cf</a>)</li>
+				<li>Merge pull request #29 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-4ad7d0106c (<a href="https://github.com/madcampos/oldwebtext/commit/16d0c42">16d0c42</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group across 1 directory with 4 updates (<a href="https://github.com/madcampos/oldwebtext/commit/f167942">f167942</a>)</li>
+				<li>Merge pull request #28 from madcampos/dependabot/npm_and_yarn/vite-6.0.11 (<a href="https://github.com/madcampos/oldwebtext/commit/e3dfa9f">e3dfa9f</a>)</li>
+				<li>Merge pull request #26 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-ad59adb4d4 (<a href="https://github.com/madcampos/oldwebtext/commit/a13a4a0">a13a4a0</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 8 updates (<a href="https://github.com/madcampos/oldwebtext/commit/a702f4f">a702f4f</a>)</li>
+				<li>Remove pages action (<a href="https://github.com/madcampos/oldwebtext/commit/ccb8ac4">ccb8ac4</a>)</li>
+				<li>Merge pull request #9 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-334d0afd31 (<a href="https://github.com/madcampos/oldwebtext/commit/e66abb3">e66abb3</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 12 updates (<a href="https://github.com/madcampos/oldwebtext/commit/c6a8ea9">c6a8ea9</a>)</li>
+			</ul>
+
+		]]></description>
+	</item>
+
+	<item>
+		<title>v3.0.1</title>
+		<pubDate>2024-01-27T03:53:08-05:00</pubDate>
+		<description><![CDATA[
+			<a href="https://github.com/madcampos/oldwebtext/compare/v3.0.0...v3.0.1">compare changes</a>
+
+
+			<h2>Enhancements</h2>
+
+			<ul>
+				<li>update changelog file (<a href="https://github.com/madcampos/oldwebtext/commit/26be685">26be685</a>)</li>
+				<li>update manifest and base icon (<a href="https://github.com/madcampos/oldwebtext/commit/4013291">4013291</a>)</li>
+				<li>update build process and remove dependencies (<a href="https://github.com/madcampos/oldwebtext/commit/f16c6f8">f16c6f8</a>)</li>
+				<li>update eslint config (<a href="https://github.com/madcampos/oldwebtext/commit/2422d59">2422d59</a>)</li>
+				<li>small tweaks to app (<a href="https://github.com/madcampos/oldwebtext/commit/032c5c1">032c5c1</a>)</li>
+				<li>update url references (<a href="https://github.com/madcampos/oldwebtext/commit/59ba73d">59ba73d</a>)</li>
+				<li>update readme (<a href="https://github.com/madcampos/oldwebtext/commit/fb1625a">fb1625a</a>)</li>
+				<li>remove apple icons (<a href="https://github.com/madcampos/oldwebtext/commit/3c4db2d">3c4db2d</a>)</li>
+				<li>update package dependencies (<a href="https://github.com/madcampos/oldwebtext/commit/59d149c">59d149c</a>)</li>
+				<li>add dependabot config (<a href="https://github.com/madcampos/oldwebtext/commit/51c5913">51c5913</a>)</li>
+			</ul>
+
+			<h2>Fixes</h2>
+
+			<ul>
+				<li>make package private and remove extra logs (<a href="https://github.com/madcampos/oldwebtext/commit/cf8ff82">cf8ff82</a>)</li>
+				<li>linting errors (<a href="https://github.com/madcampos/oldwebtext/commit/ddc4700">ddc4700</a>)</li>
+				<li>resolve linting issues (<a href="https://github.com/madcampos/oldwebtext/commit/b1515ac">b1515ac</a>)</li>
+			</ul>
+
+			<h2>Builds</h2>
+
+			<ul>
+				<li>**deps-dev**: bump vite from 5.0.10 to 5.0.12 (<a href="https://github.com/madcampos/oldwebtext/commit/f0fde14">f0fde14</a>)</li>
+				<li>**deps-dev**: bump @babel/traverse from 7.22.8 to 7.23.2 (<a href="https://github.com/madcampos/oldwebtext/commit/b7c6f93">b7c6f93</a>)</li>
+				<li>**deps-dev**: bump postcss from 8.4.27 to 8.4.31 (<a href="https://github.com/madcampos/oldwebtext/commit/8f46799">8f46799</a>)</li>
+			</ul>
+
+			<h2>Chores &amp; Tasks</h2>
+
+			<ul>
+				<li>update project structure and dependencies (<a href="https://github.com/madcampos/oldwebtext/commit/bfbf3d3">bfbf3d3</a>)</li>
+				<li>**deps-dev**: bump minimatch from 5.1.6 to 5.1.9 (<a href="https://github.com/madcampos/oldwebtext/commit/f9a1678">f9a1678</a>)</li>
+				<li>**deps**: bump rollup (<a href="https://github.com/madcampos/oldwebtext/commit/cf9b351">cf9b351</a>)</li>
+				<li>**deps-dev**: bump lodash from 4.17.21 to 4.17.23 (<a href="https://github.com/madcampos/oldwebtext/commit/1bfa4e4">1bfa4e4</a>)</li>
+				<li>update tsconfig (<a href="https://github.com/madcampos/oldwebtext/commit/c812552">c812552</a>)</li>
+				<li>update dependabot config (<a href="https://github.com/madcampos/oldwebtext/commit/ed063f9">ed063f9</a>)</li>
+				<li>update dependabot config (<a href="https://github.com/madcampos/oldwebtext/commit/17f8b07">17f8b07</a>)</li>
+				<li>**deps-dev**: bump js-yaml from 4.1.0 to 4.1.1 (<a href="https://github.com/madcampos/oldwebtext/commit/1d1d9d1">1d1d9d1</a>)</li>
+				<li>**deps-dev**: bump vite from 7.1.5 to 7.1.11 (<a href="https://github.com/madcampos/oldwebtext/commit/7a5b74e">7a5b74e</a>)</li>
+				<li>**deps-dev**: bump vite from 7.1.4 to 7.1.5 (<a href="https://github.com/madcampos/oldwebtext/commit/733b204">733b204</a>)</li>
+				<li>**deps-dev**: bump vite from 6.3.3 to 6.3.4 (<a href="https://github.com/madcampos/oldwebtext/commit/4634fcd">4634fcd</a>)</li>
+				<li>update packages and infrastructure (<a href="https://github.com/madcampos/oldwebtext/commit/3b696e0">3b696e0</a>)</li>
+				<li>**deps-dev**: bump vite from 6.2.5 to 6.2.6 (<a href="https://github.com/madcampos/oldwebtext/commit/445380a">445380a</a>)</li>
+				<li>**deps-dev**: bump vite from 6.2.4 to 6.2.5 (<a href="https://github.com/madcampos/oldwebtext/commit/cfbb3b8">cfbb3b8</a>)</li>
+				<li>**deps-dev**: bump vite from 6.2.0 to 6.2.4 (<a href="https://github.com/madcampos/oldwebtext/commit/20cf56d">20cf56d</a>)</li>
+				<li>**deps-dev**: bump vite from 6.0.1 to 6.0.11 (<a href="https://github.com/madcampos/oldwebtext/commit/30beadf">30beadf</a>)</li>
+				<li>add format command (<a href="https://github.com/madcampos/oldwebtext/commit/18463ae">18463ae</a>)</li>
+				<li>remove stylelint (<a href="https://github.com/madcampos/oldwebtext/commit/dc6faf1">dc6faf1</a>)</li>
+				<li>fix eslint command (<a href="https://github.com/madcampos/oldwebtext/commit/fa459b9">fa459b9</a>)</li>
+				<li>update git hooks (<a href="https://github.com/madcampos/oldwebtext/commit/b09d4bb">b09d4bb</a>)</li>
+				<li>update packages (<a href="https://github.com/madcampos/oldwebtext/commit/9ce9986">9ce9986</a>)</li>
+				<li>Update dependabot.yml (<a href="https://github.com/madcampos/oldwebtext/commit/ee8aeb7">ee8aeb7</a>)</li>
+				<li>update dependencies (<a href="https://github.com/madcampos/oldwebtext/commit/176c2f0">176c2f0</a>)</li>
+				<li>update packages (<a href="https://github.com/madcampos/oldwebtext/commit/35728be">35728be</a>)</li>
+				<li>update github pages actions (<a href="https://github.com/madcampos/oldwebtext/commit/6007a2c">6007a2c</a>)</li>
+				<li>cleanup packages (<a href="https://github.com/madcampos/oldwebtext/commit/b51b657">b51b657</a>)</li>
+			</ul>
+
+			<h2>Miscellaneous</h2>
+
+			<ul>
+				<li>Merge pull request #62 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-97347d3346 (<a href="https://github.com/madcampos/oldwebtext/commit/20f721d">20f721d</a>)</li>
+				<li>[dependency update]: Bump wrangler in the dev-dependencies group (<a href="https://github.com/madcampos/oldwebtext/commit/2728e7f">2728e7f</a>)</li>
+				<li>Merge pull request #61 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-b1d1ed2555 (<a href="https://github.com/madcampos/oldwebtext/commit/9d21181">9d21181</a>)</li>
+				<li>[dependency update]: Bump wrangler in the dev-dependencies group (<a href="https://github.com/madcampos/oldwebtext/commit/d294139">d294139</a>)</li>
+				<li>Merge pull request #60 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-574b0d5a74 (<a href="https://github.com/madcampos/oldwebtext/commit/b61b228">b61b228</a>)</li>
+				<li>[dependency update]: bump typescript in the dev-dependencies group (<a href="https://github.com/madcampos/oldwebtext/commit/0ed2bbd">0ed2bbd</a>)</li>
+				<li>Merge pull request #55 from madcampos/dependabot/npm_and_yarn/minimatch-5.1.9 (<a href="https://github.com/madcampos/oldwebtext/commit/77c8034">77c8034</a>)</li>
+				<li>Merge pull request #52 from madcampos/dependabot/npm_and_yarn/multi-571506d351 (<a href="https://github.com/madcampos/oldwebtext/commit/da20aa3">da20aa3</a>)</li>
+				<li>Merge pull request #54 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-27104c84d2 (<a href="https://github.com/madcampos/oldwebtext/commit/6bd9671">6bd9671</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/oldwebtext/commit/b3e4c8d">b3e4c8d</a>)</li>
+				<li>Merge pull request #51 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-7dced69c92 (<a href="https://github.com/madcampos/oldwebtext/commit/e08076b">e08076b</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/oldwebtext/commit/ba41725">ba41725</a>)</li>
+				<li>Merge pull request #50 from madcampos/dependabot/npm_and_yarn/lodash-4.17.23 (<a href="https://github.com/madcampos/oldwebtext/commit/a1fd502">a1fd502</a>)</li>
+				<li>Merge pull request #49 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-bc50e69e4f (<a href="https://github.com/madcampos/oldwebtext/commit/17f75a8">17f75a8</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 5 updates (<a href="https://github.com/madcampos/oldwebtext/commit/08353e0">08353e0</a>)</li>
+				<li>Merge pull request #48 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-e9b0bbd067 (<a href="https://github.com/madcampos/oldwebtext/commit/1fd7ac9">1fd7ac9</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group across 1 directory with 2 updates (<a href="https://github.com/madcampos/oldwebtext/commit/2373aac">2373aac</a>)</li>
+				<li>Merge pull request #46 from madcampos/dependabot/npm_and_yarn/js-yaml-4.1.1 (<a href="https://github.com/madcampos/oldwebtext/commit/3bd9874">3bd9874</a>)</li>
+				<li>Merge pull request #45 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-a281602c46 (<a href="https://github.com/madcampos/oldwebtext/commit/bcf9291">bcf9291</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 6 updates (<a href="https://github.com/madcampos/oldwebtext/commit/323575d">323575d</a>)</li>
+				<li>Merge pull request #44 from madcampos/dependabot/npm_and_yarn/vite-7.1.11 (<a href="https://github.com/madcampos/oldwebtext/commit/7e90099">7e90099</a>)</li>
+				<li>Merge pull request #43 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-187b6c991d (<a href="https://github.com/madcampos/oldwebtext/commit/2fd9d0f">2fd9d0f</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 5 updates (<a href="https://github.com/madcampos/oldwebtext/commit/c624587">c624587</a>)</li>
+				<li>Merge pull request #42 from madcampos/dependabot/npm_and_yarn/vite-7.1.5 (<a href="https://github.com/madcampos/oldwebtext/commit/fb6f875">fb6f875</a>)</li>
+				<li>Merge pull request #41 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-793c22c2c1 (<a href="https://github.com/madcampos/oldwebtext/commit/59a65b4">59a65b4</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 5 updates (<a href="https://github.com/madcampos/oldwebtext/commit/4377a23">4377a23</a>)</li>
+				<li>Merge pull request #40 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-93c73f12c2 (<a href="https://github.com/madcampos/oldwebtext/commit/ba98fb5">ba98fb5</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 5 updates (<a href="https://github.com/madcampos/oldwebtext/commit/79e33a3">79e33a3</a>)</li>
+				<li>Merge pull request #39 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-c2be55a223 (<a href="https://github.com/madcampos/oldwebtext/commit/94575c8">94575c8</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 6 updates (<a href="https://github.com/madcampos/oldwebtext/commit/891dc5e">891dc5e</a>)</li>
+				<li>Merge pull request #38 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-3b1aa7447e (<a href="https://github.com/madcampos/oldwebtext/commit/98dc9d3">98dc9d3</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/oldwebtext/commit/833790b">833790b</a>)</li>
+				<li>Merge pull request #37 from madcampos/dependabot/npm_and_yarn/vite-6.3.4 (<a href="https://github.com/madcampos/oldwebtext/commit/42c11a2">42c11a2</a>)</li>
+				<li>Merge pull request #36 from madcampos/dependabot/npm_and_yarn/vite-6.2.6 (<a href="https://github.com/madcampos/oldwebtext/commit/f70882b">f70882b</a>)</li>
+				<li>Merge pull request #35 from madcampos/dependabot/npm_and_yarn/vite-6.2.5 (<a href="https://github.com/madcampos/oldwebtext/commit/40330b2">40330b2</a>)</li>
+				<li>Merge pull request #34 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-787110165f (<a href="https://github.com/madcampos/oldwebtext/commit/eb8e1ea">eb8e1ea</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/oldwebtext/commit/26b79c0">26b79c0</a>)</li>
+				<li>Merge pull request #33 from madcampos/dependabot/npm_and_yarn/vite-6.2.4 (<a href="https://github.com/madcampos/oldwebtext/commit/e7deb8e">e7deb8e</a>)</li>
+				<li>Merge pull request #31 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-bc9b59c57a (<a href="https://github.com/madcampos/oldwebtext/commit/8393605">8393605</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 6 updates (<a href="https://github.com/madcampos/oldwebtext/commit/f7bd8be">f7bd8be</a>)</li>
+				<li>Merge pull request #30 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-1a36ff76b2 (<a href="https://github.com/madcampos/oldwebtext/commit/0234cda">0234cda</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/oldwebtext/commit/a43f4cf">a43f4cf</a>)</li>
+				<li>Merge pull request #29 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-4ad7d0106c (<a href="https://github.com/madcampos/oldwebtext/commit/16d0c42">16d0c42</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group across 1 directory with 4 updates (<a href="https://github.com/madcampos/oldwebtext/commit/f167942">f167942</a>)</li>
+				<li>Merge pull request #28 from madcampos/dependabot/npm_and_yarn/vite-6.0.11 (<a href="https://github.com/madcampos/oldwebtext/commit/e3dfa9f">e3dfa9f</a>)</li>
+				<li>Merge pull request #26 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-ad59adb4d4 (<a href="https://github.com/madcampos/oldwebtext/commit/a13a4a0">a13a4a0</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 8 updates (<a href="https://github.com/madcampos/oldwebtext/commit/a702f4f">a702f4f</a>)</li>
+				<li>Remove pages action (<a href="https://github.com/madcampos/oldwebtext/commit/ccb8ac4">ccb8ac4</a>)</li>
+				<li>Merge pull request #9 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-334d0afd31 (<a href="https://github.com/madcampos/oldwebtext/commit/e66abb3">e66abb3</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 12 updates (<a href="https://github.com/madcampos/oldwebtext/commit/c6a8ea9">c6a8ea9</a>)</li>
+				<li>update github pages workflow (<a href="https://github.com/madcampos/oldwebtext/commit/18ece07">18ece07</a>)</li>
+				<li>Merge pull request #8 from madcampos/dependabot/npm_and_yarn/vite-5.0.12 (<a href="https://github.com/madcampos/oldwebtext/commit/6cbef75">6cbef75</a>)</li>
+				<li>Merge pull request #7 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-c2efe2267e (<a href="https://github.com/madcampos/oldwebtext/commit/c0239d0">c0239d0</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 11 updates (<a href="https://github.com/madcampos/oldwebtext/commit/577adb2">577adb2</a>)</li>
+				<li>Merge pull request #5 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-5a7cc95a50 (<a href="https://github.com/madcampos/oldwebtext/commit/cea543f">cea543f</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 11 updates (<a href="https://github.com/madcampos/oldwebtext/commit/370fe71">370fe71</a>)</li>
+				<li>Merge pull request #4 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-c259565595 (<a href="https://github.com/madcampos/oldwebtext/commit/8a4e867">8a4e867</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 10 updates (<a href="https://github.com/madcampos/oldwebtext/commit/f91d134">f91d134</a>)</li>
+				<li>Merge pull request #2 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-60c4ebafc7 (<a href="https://github.com/madcampos/oldwebtext/commit/de21f6f">de21f6f</a>)</li>
+				<li>Merge pull request #3 from madcampos/dependabot/npm_and_yarn/babel/traverse-7.23.2 (<a href="https://github.com/madcampos/oldwebtext/commit/694342f">694342f</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 12 updates (<a href="https://github.com/madcampos/oldwebtext/commit/4cc0b4a">4cc0b4a</a>)</li>
+				<li>Merge pull request #1 from madcampos/dependabot/npm_and_yarn/postcss-8.4.31 (<a href="https://github.com/madcampos/oldwebtext/commit/ea63a49">ea63a49</a>)</li>
+			</ul>
+
+		]]></description>
+	</item>
+
+	<item>
+		<title>v3.0.0</title>
+		<pubDate>2023-08-01T01:25:34-04:00</pubDate>
+		<description><![CDATA[
+			<a href="https://github.com/madcampos/oldwebtext/compare/v2.0.0...v3.0.0">compare changes</a>
+
+
+			<h2>Enhancements</h2>
+
+			<ul>
+				<li>update changelog file (<a href="https://github.com/madcampos/oldwebtext/commit/26be685">26be685</a>)</li>
+				<li>update manifest and base icon (<a href="https://github.com/madcampos/oldwebtext/commit/4013291">4013291</a>)</li>
+				<li>update build process and remove dependencies (<a href="https://github.com/madcampos/oldwebtext/commit/f16c6f8">f16c6f8</a>)</li>
+				<li>update eslint config (<a href="https://github.com/madcampos/oldwebtext/commit/2422d59">2422d59</a>)</li>
+				<li>small tweaks to app (<a href="https://github.com/madcampos/oldwebtext/commit/032c5c1">032c5c1</a>)</li>
+				<li>update url references (<a href="https://github.com/madcampos/oldwebtext/commit/59ba73d">59ba73d</a>)</li>
+				<li>update readme (<a href="https://github.com/madcampos/oldwebtext/commit/fb1625a">fb1625a</a>)</li>
+				<li>remove apple icons (<a href="https://github.com/madcampos/oldwebtext/commit/3c4db2d">3c4db2d</a>)</li>
+				<li>update package dependencies (<a href="https://github.com/madcampos/oldwebtext/commit/59d149c">59d149c</a>)</li>
+				<li>add dependabot config (<a href="https://github.com/madcampos/oldwebtext/commit/51c5913">51c5913</a>)</li>
+				<li>move icons and splashes to public folder (<a href="https://github.com/madcampos/oldwebtext/commit/c35d529">c35d529</a>)</li>
+				<li>update build to vite (<a href="https://github.com/madcampos/oldwebtext/commit/59cb715">59cb715</a>)</li>
+				<li>Add manifest as share target (<a href="https://github.com/madcampos/oldwebtext/commit/ba0f797">ba0f797</a>)</li>
+				<li>Add missing favicon (<a href="https://github.com/madcampos/oldwebtext/commit/5014917">5014917</a>)</li>
+				<li>Implement improvementes to PWA (<a href="https://github.com/madcampos/oldwebtext/commit/93e3d4e">93e3d4e</a>)</li>
+				<li>Add decorators prefered style (<a href="https://github.com/madcampos/oldwebtext/commit/7835c22">7835c22</a>)</li>
+				<li>Improve lib (<a href="https://github.com/madcampos/oldwebtext/commit/f185f84">f185f84</a>)</li>
+				<li>Add loaders (<a href="https://github.com/madcampos/oldwebtext/commit/413e33a">413e33a</a>)</li>
+				<li>Remove build artifacts (<a href="https://github.com/madcampos/oldwebtext/commit/690e7a1">690e7a1</a>)</li>
+				<li>Add PWA built files (<a href="https://github.com/madcampos/oldwebtext/commit/8e43b2f">8e43b2f</a>)</li>
+				<li>Implement PWA (<a href="https://github.com/madcampos/oldwebtext/commit/d13dfa0">d13dfa0</a>)</li>
+			</ul>
+
+			<h2>Fixes</h2>
+
+			<ul>
+				<li>make package private and remove extra logs (<a href="https://github.com/madcampos/oldwebtext/commit/cf8ff82">cf8ff82</a>)</li>
+				<li>linting errors (<a href="https://github.com/madcampos/oldwebtext/commit/ddc4700">ddc4700</a>)</li>
+				<li>resolve linting issues (<a href="https://github.com/madcampos/oldwebtext/commit/b1515ac">b1515ac</a>)</li>
+				<li>update html title (<a href="https://github.com/madcampos/oldwebtext/commit/2edf303">2edf303</a>)</li>
+				<li>change wrong variable (<a href="https://github.com/madcampos/oldwebtext/commit/c90c11b">c90c11b</a>)</li>
+				<li>Resolve service worker export (<a href="https://github.com/madcampos/oldwebtext/commit/db1d24c">db1d24c</a>)</li>
+				<li>Update theme colors (<a href="https://github.com/madcampos/oldwebtext/commit/f23402a">f23402a</a>)</li>
+			</ul>
+
+			<h2>Builds</h2>
+
+			<ul>
+				<li>**deps-dev**: bump vite from 5.0.10 to 5.0.12 (<a href="https://github.com/madcampos/oldwebtext/commit/f0fde14">f0fde14</a>)</li>
+				<li>**deps-dev**: bump @babel/traverse from 7.22.8 to 7.23.2 (<a href="https://github.com/madcampos/oldwebtext/commit/b7c6f93">b7c6f93</a>)</li>
+				<li>**deps-dev**: bump postcss from 8.4.27 to 8.4.31 (<a href="https://github.com/madcampos/oldwebtext/commit/8f46799">8f46799</a>)</li>
+			</ul>
+
+			<h2>Chores &amp; Tasks</h2>
+
+			<ul>
+				<li>update project structure and dependencies (<a href="https://github.com/madcampos/oldwebtext/commit/bfbf3d3">bfbf3d3</a>)</li>
+				<li>**deps-dev**: bump minimatch from 5.1.6 to 5.1.9 (<a href="https://github.com/madcampos/oldwebtext/commit/f9a1678">f9a1678</a>)</li>
+				<li>**deps**: bump rollup (<a href="https://github.com/madcampos/oldwebtext/commit/cf9b351">cf9b351</a>)</li>
+				<li>**deps-dev**: bump lodash from 4.17.21 to 4.17.23 (<a href="https://github.com/madcampos/oldwebtext/commit/1bfa4e4">1bfa4e4</a>)</li>
+				<li>update tsconfig (<a href="https://github.com/madcampos/oldwebtext/commit/c812552">c812552</a>)</li>
+				<li>update dependabot config (<a href="https://github.com/madcampos/oldwebtext/commit/ed063f9">ed063f9</a>)</li>
+				<li>update dependabot config (<a href="https://github.com/madcampos/oldwebtext/commit/17f8b07">17f8b07</a>)</li>
+				<li>**deps-dev**: bump js-yaml from 4.1.0 to 4.1.1 (<a href="https://github.com/madcampos/oldwebtext/commit/1d1d9d1">1d1d9d1</a>)</li>
+				<li>**deps-dev**: bump vite from 7.1.5 to 7.1.11 (<a href="https://github.com/madcampos/oldwebtext/commit/7a5b74e">7a5b74e</a>)</li>
+				<li>**deps-dev**: bump vite from 7.1.4 to 7.1.5 (<a href="https://github.com/madcampos/oldwebtext/commit/733b204">733b204</a>)</li>
+				<li>**deps-dev**: bump vite from 6.3.3 to 6.3.4 (<a href="https://github.com/madcampos/oldwebtext/commit/4634fcd">4634fcd</a>)</li>
+				<li>update packages and infrastructure (<a href="https://github.com/madcampos/oldwebtext/commit/3b696e0">3b696e0</a>)</li>
+				<li>**deps-dev**: bump vite from 6.2.5 to 6.2.6 (<a href="https://github.com/madcampos/oldwebtext/commit/445380a">445380a</a>)</li>
+				<li>**deps-dev**: bump vite from 6.2.4 to 6.2.5 (<a href="https://github.com/madcampos/oldwebtext/commit/cfbb3b8">cfbb3b8</a>)</li>
+				<li>**deps-dev**: bump vite from 6.2.0 to 6.2.4 (<a href="https://github.com/madcampos/oldwebtext/commit/20cf56d">20cf56d</a>)</li>
+				<li>**deps-dev**: bump vite from 6.0.1 to 6.0.11 (<a href="https://github.com/madcampos/oldwebtext/commit/30beadf">30beadf</a>)</li>
+				<li>add format command (<a href="https://github.com/madcampos/oldwebtext/commit/18463ae">18463ae</a>)</li>
+				<li>remove stylelint (<a href="https://github.com/madcampos/oldwebtext/commit/dc6faf1">dc6faf1</a>)</li>
+				<li>fix eslint command (<a href="https://github.com/madcampos/oldwebtext/commit/fa459b9">fa459b9</a>)</li>
+				<li>update git hooks (<a href="https://github.com/madcampos/oldwebtext/commit/b09d4bb">b09d4bb</a>)</li>
+				<li>update packages (<a href="https://github.com/madcampos/oldwebtext/commit/9ce9986">9ce9986</a>)</li>
+				<li>Update dependabot.yml (<a href="https://github.com/madcampos/oldwebtext/commit/ee8aeb7">ee8aeb7</a>)</li>
+				<li>update dependencies (<a href="https://github.com/madcampos/oldwebtext/commit/176c2f0">176c2f0</a>)</li>
+				<li>update packages (<a href="https://github.com/madcampos/oldwebtext/commit/35728be">35728be</a>)</li>
+				<li>update github pages actions (<a href="https://github.com/madcampos/oldwebtext/commit/6007a2c">6007a2c</a>)</li>
+				<li>cleanup packages (<a href="https://github.com/madcampos/oldwebtext/commit/b51b657">b51b657</a>)</li>
+			</ul>
+
+			<h2>Miscellaneous</h2>
+
+			<ul>
+				<li>Merge pull request #62 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-97347d3346 (<a href="https://github.com/madcampos/oldwebtext/commit/20f721d">20f721d</a>)</li>
+				<li>[dependency update]: Bump wrangler in the dev-dependencies group (<a href="https://github.com/madcampos/oldwebtext/commit/2728e7f">2728e7f</a>)</li>
+				<li>Merge pull request #61 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-b1d1ed2555 (<a href="https://github.com/madcampos/oldwebtext/commit/9d21181">9d21181</a>)</li>
+				<li>[dependency update]: Bump wrangler in the dev-dependencies group (<a href="https://github.com/madcampos/oldwebtext/commit/d294139">d294139</a>)</li>
+				<li>Merge pull request #60 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-574b0d5a74 (<a href="https://github.com/madcampos/oldwebtext/commit/b61b228">b61b228</a>)</li>
+				<li>[dependency update]: bump typescript in the dev-dependencies group (<a href="https://github.com/madcampos/oldwebtext/commit/0ed2bbd">0ed2bbd</a>)</li>
+				<li>Merge pull request #55 from madcampos/dependabot/npm_and_yarn/minimatch-5.1.9 (<a href="https://github.com/madcampos/oldwebtext/commit/77c8034">77c8034</a>)</li>
+				<li>Merge pull request #52 from madcampos/dependabot/npm_and_yarn/multi-571506d351 (<a href="https://github.com/madcampos/oldwebtext/commit/da20aa3">da20aa3</a>)</li>
+				<li>Merge pull request #54 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-27104c84d2 (<a href="https://github.com/madcampos/oldwebtext/commit/6bd9671">6bd9671</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/oldwebtext/commit/b3e4c8d">b3e4c8d</a>)</li>
+				<li>Merge pull request #51 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-7dced69c92 (<a href="https://github.com/madcampos/oldwebtext/commit/e08076b">e08076b</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/oldwebtext/commit/ba41725">ba41725</a>)</li>
+				<li>Merge pull request #50 from madcampos/dependabot/npm_and_yarn/lodash-4.17.23 (<a href="https://github.com/madcampos/oldwebtext/commit/a1fd502">a1fd502</a>)</li>
+				<li>Merge pull request #49 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-bc50e69e4f (<a href="https://github.com/madcampos/oldwebtext/commit/17f75a8">17f75a8</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 5 updates (<a href="https://github.com/madcampos/oldwebtext/commit/08353e0">08353e0</a>)</li>
+				<li>Merge pull request #48 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-e9b0bbd067 (<a href="https://github.com/madcampos/oldwebtext/commit/1fd7ac9">1fd7ac9</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group across 1 directory with 2 updates (<a href="https://github.com/madcampos/oldwebtext/commit/2373aac">2373aac</a>)</li>
+				<li>Merge pull request #46 from madcampos/dependabot/npm_and_yarn/js-yaml-4.1.1 (<a href="https://github.com/madcampos/oldwebtext/commit/3bd9874">3bd9874</a>)</li>
+				<li>Merge pull request #45 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-a281602c46 (<a href="https://github.com/madcampos/oldwebtext/commit/bcf9291">bcf9291</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 6 updates (<a href="https://github.com/madcampos/oldwebtext/commit/323575d">323575d</a>)</li>
+				<li>Merge pull request #44 from madcampos/dependabot/npm_and_yarn/vite-7.1.11 (<a href="https://github.com/madcampos/oldwebtext/commit/7e90099">7e90099</a>)</li>
+				<li>Merge pull request #43 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-187b6c991d (<a href="https://github.com/madcampos/oldwebtext/commit/2fd9d0f">2fd9d0f</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 5 updates (<a href="https://github.com/madcampos/oldwebtext/commit/c624587">c624587</a>)</li>
+				<li>Merge pull request #42 from madcampos/dependabot/npm_and_yarn/vite-7.1.5 (<a href="https://github.com/madcampos/oldwebtext/commit/fb6f875">fb6f875</a>)</li>
+				<li>Merge pull request #41 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-793c22c2c1 (<a href="https://github.com/madcampos/oldwebtext/commit/59a65b4">59a65b4</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 5 updates (<a href="https://github.com/madcampos/oldwebtext/commit/4377a23">4377a23</a>)</li>
+				<li>Merge pull request #40 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-93c73f12c2 (<a href="https://github.com/madcampos/oldwebtext/commit/ba98fb5">ba98fb5</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 5 updates (<a href="https://github.com/madcampos/oldwebtext/commit/79e33a3">79e33a3</a>)</li>
+				<li>Merge pull request #39 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-c2be55a223 (<a href="https://github.com/madcampos/oldwebtext/commit/94575c8">94575c8</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 6 updates (<a href="https://github.com/madcampos/oldwebtext/commit/891dc5e">891dc5e</a>)</li>
+				<li>Merge pull request #38 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-3b1aa7447e (<a href="https://github.com/madcampos/oldwebtext/commit/98dc9d3">98dc9d3</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/oldwebtext/commit/833790b">833790b</a>)</li>
+				<li>Merge pull request #37 from madcampos/dependabot/npm_and_yarn/vite-6.3.4 (<a href="https://github.com/madcampos/oldwebtext/commit/42c11a2">42c11a2</a>)</li>
+				<li>Merge pull request #36 from madcampos/dependabot/npm_and_yarn/vite-6.2.6 (<a href="https://github.com/madcampos/oldwebtext/commit/f70882b">f70882b</a>)</li>
+				<li>Merge pull request #35 from madcampos/dependabot/npm_and_yarn/vite-6.2.5 (<a href="https://github.com/madcampos/oldwebtext/commit/40330b2">40330b2</a>)</li>
+				<li>Merge pull request #34 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-787110165f (<a href="https://github.com/madcampos/oldwebtext/commit/eb8e1ea">eb8e1ea</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/oldwebtext/commit/26b79c0">26b79c0</a>)</li>
+				<li>Merge pull request #33 from madcampos/dependabot/npm_and_yarn/vite-6.2.4 (<a href="https://github.com/madcampos/oldwebtext/commit/e7deb8e">e7deb8e</a>)</li>
+				<li>Merge pull request #31 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-bc9b59c57a (<a href="https://github.com/madcampos/oldwebtext/commit/8393605">8393605</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 6 updates (<a href="https://github.com/madcampos/oldwebtext/commit/f7bd8be">f7bd8be</a>)</li>
+				<li>Merge pull request #30 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-1a36ff76b2 (<a href="https://github.com/madcampos/oldwebtext/commit/0234cda">0234cda</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/oldwebtext/commit/a43f4cf">a43f4cf</a>)</li>
+				<li>Merge pull request #29 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-4ad7d0106c (<a href="https://github.com/madcampos/oldwebtext/commit/16d0c42">16d0c42</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group across 1 directory with 4 updates (<a href="https://github.com/madcampos/oldwebtext/commit/f167942">f167942</a>)</li>
+				<li>Merge pull request #28 from madcampos/dependabot/npm_and_yarn/vite-6.0.11 (<a href="https://github.com/madcampos/oldwebtext/commit/e3dfa9f">e3dfa9f</a>)</li>
+				<li>Merge pull request #26 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-ad59adb4d4 (<a href="https://github.com/madcampos/oldwebtext/commit/a13a4a0">a13a4a0</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 8 updates (<a href="https://github.com/madcampos/oldwebtext/commit/a702f4f">a702f4f</a>)</li>
+				<li>Remove pages action (<a href="https://github.com/madcampos/oldwebtext/commit/ccb8ac4">ccb8ac4</a>)</li>
+				<li>Merge pull request #9 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-334d0afd31 (<a href="https://github.com/madcampos/oldwebtext/commit/e66abb3">e66abb3</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 12 updates (<a href="https://github.com/madcampos/oldwebtext/commit/c6a8ea9">c6a8ea9</a>)</li>
+				<li>update github pages workflow (<a href="https://github.com/madcampos/oldwebtext/commit/18ece07">18ece07</a>)</li>
+				<li>Merge pull request #8 from madcampos/dependabot/npm_and_yarn/vite-5.0.12 (<a href="https://github.com/madcampos/oldwebtext/commit/6cbef75">6cbef75</a>)</li>
+				<li>Merge pull request #7 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-c2efe2267e (<a href="https://github.com/madcampos/oldwebtext/commit/c0239d0">c0239d0</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 11 updates (<a href="https://github.com/madcampos/oldwebtext/commit/577adb2">577adb2</a>)</li>
+				<li>Merge pull request #5 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-5a7cc95a50 (<a href="https://github.com/madcampos/oldwebtext/commit/cea543f">cea543f</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 11 updates (<a href="https://github.com/madcampos/oldwebtext/commit/370fe71">370fe71</a>)</li>
+				<li>Merge pull request #4 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-c259565595 (<a href="https://github.com/madcampos/oldwebtext/commit/8a4e867">8a4e867</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 10 updates (<a href="https://github.com/madcampos/oldwebtext/commit/f91d134">f91d134</a>)</li>
+				<li>Merge pull request #2 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-60c4ebafc7 (<a href="https://github.com/madcampos/oldwebtext/commit/de21f6f">de21f6f</a>)</li>
+				<li>Merge pull request #3 from madcampos/dependabot/npm_and_yarn/babel/traverse-7.23.2 (<a href="https://github.com/madcampos/oldwebtext/commit/694342f">694342f</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 12 updates (<a href="https://github.com/madcampos/oldwebtext/commit/4cc0b4a">4cc0b4a</a>)</li>
+				<li>Merge pull request #1 from madcampos/dependabot/npm_and_yarn/postcss-8.4.31 (<a href="https://github.com/madcampos/oldwebtext/commit/ea63a49">ea63a49</a>)</li>
+				<li>Add preliminary research into hyphenation (<a href="https://github.com/madcampos/oldwebtext/commit/765a397">765a397</a>)</li>
+			</ul>
+
+		]]></description>
+	</item>
+
+	<item>
+		<title>v2.0.0</title>
+		<pubDate>2016-11-04T04:42:08-03:00</pubDate>
+		<description><![CDATA[
+			<a href="https://github.com/madcampos/oldwebtext/compare/v1.0.0...v2.0.0">compare changes</a>
+
+
+			<h2>Enhancements</h2>
+
+			<ul>
+				<li>update changelog file (<a href="https://github.com/madcampos/oldwebtext/commit/26be685">26be685</a>)</li>
+				<li>update manifest and base icon (<a href="https://github.com/madcampos/oldwebtext/commit/4013291">4013291</a>)</li>
+				<li>update build process and remove dependencies (<a href="https://github.com/madcampos/oldwebtext/commit/f16c6f8">f16c6f8</a>)</li>
+				<li>update eslint config (<a href="https://github.com/madcampos/oldwebtext/commit/2422d59">2422d59</a>)</li>
+				<li>small tweaks to app (<a href="https://github.com/madcampos/oldwebtext/commit/032c5c1">032c5c1</a>)</li>
+				<li>update url references (<a href="https://github.com/madcampos/oldwebtext/commit/59ba73d">59ba73d</a>)</li>
+				<li>update readme (<a href="https://github.com/madcampos/oldwebtext/commit/fb1625a">fb1625a</a>)</li>
+				<li>remove apple icons (<a href="https://github.com/madcampos/oldwebtext/commit/3c4db2d">3c4db2d</a>)</li>
+				<li>update package dependencies (<a href="https://github.com/madcampos/oldwebtext/commit/59d149c">59d149c</a>)</li>
+				<li>add dependabot config (<a href="https://github.com/madcampos/oldwebtext/commit/51c5913">51c5913</a>)</li>
+				<li>move icons and splashes to public folder (<a href="https://github.com/madcampos/oldwebtext/commit/c35d529">c35d529</a>)</li>
+				<li>update build to vite (<a href="https://github.com/madcampos/oldwebtext/commit/59cb715">59cb715</a>)</li>
+				<li>Add manifest as share target (<a href="https://github.com/madcampos/oldwebtext/commit/ba0f797">ba0f797</a>)</li>
+				<li>Add missing favicon (<a href="https://github.com/madcampos/oldwebtext/commit/5014917">5014917</a>)</li>
+				<li>Implement improvementes to PWA (<a href="https://github.com/madcampos/oldwebtext/commit/93e3d4e">93e3d4e</a>)</li>
+				<li>Add decorators prefered style (<a href="https://github.com/madcampos/oldwebtext/commit/7835c22">7835c22</a>)</li>
+				<li>Improve lib (<a href="https://github.com/madcampos/oldwebtext/commit/f185f84">f185f84</a>)</li>
+				<li>Add loaders (<a href="https://github.com/madcampos/oldwebtext/commit/413e33a">413e33a</a>)</li>
+				<li>Remove build artifacts (<a href="https://github.com/madcampos/oldwebtext/commit/690e7a1">690e7a1</a>)</li>
+				<li>Add PWA built files (<a href="https://github.com/madcampos/oldwebtext/commit/8e43b2f">8e43b2f</a>)</li>
+				<li>Implement PWA (<a href="https://github.com/madcampos/oldwebtext/commit/d13dfa0">d13dfa0</a>)</li>
+			</ul>
+
+			<h2>Fixes</h2>
+
+			<ul>
+				<li>make package private and remove extra logs (<a href="https://github.com/madcampos/oldwebtext/commit/cf8ff82">cf8ff82</a>)</li>
+				<li>linting errors (<a href="https://github.com/madcampos/oldwebtext/commit/ddc4700">ddc4700</a>)</li>
+				<li>resolve linting issues (<a href="https://github.com/madcampos/oldwebtext/commit/b1515ac">b1515ac</a>)</li>
+				<li>update html title (<a href="https://github.com/madcampos/oldwebtext/commit/2edf303">2edf303</a>)</li>
+				<li>change wrong variable (<a href="https://github.com/madcampos/oldwebtext/commit/c90c11b">c90c11b</a>)</li>
+				<li>Resolve service worker export (<a href="https://github.com/madcampos/oldwebtext/commit/db1d24c">db1d24c</a>)</li>
+				<li>Update theme colors (<a href="https://github.com/madcampos/oldwebtext/commit/f23402a">f23402a</a>)</li>
+			</ul>
+
+			<h2>Builds</h2>
+
+			<ul>
+				<li>**deps-dev**: bump vite from 5.0.10 to 5.0.12 (<a href="https://github.com/madcampos/oldwebtext/commit/f0fde14">f0fde14</a>)</li>
+				<li>**deps-dev**: bump @babel/traverse from 7.22.8 to 7.23.2 (<a href="https://github.com/madcampos/oldwebtext/commit/b7c6f93">b7c6f93</a>)</li>
+				<li>**deps-dev**: bump postcss from 8.4.27 to 8.4.31 (<a href="https://github.com/madcampos/oldwebtext/commit/8f46799">8f46799</a>)</li>
+			</ul>
+
+			<h2>Chores &amp; Tasks</h2>
+
+			<ul>
+				<li>update project structure and dependencies (<a href="https://github.com/madcampos/oldwebtext/commit/bfbf3d3">bfbf3d3</a>)</li>
+				<li>**deps-dev**: bump minimatch from 5.1.6 to 5.1.9 (<a href="https://github.com/madcampos/oldwebtext/commit/f9a1678">f9a1678</a>)</li>
+				<li>**deps**: bump rollup (<a href="https://github.com/madcampos/oldwebtext/commit/cf9b351">cf9b351</a>)</li>
+				<li>**deps-dev**: bump lodash from 4.17.21 to 4.17.23 (<a href="https://github.com/madcampos/oldwebtext/commit/1bfa4e4">1bfa4e4</a>)</li>
+				<li>update tsconfig (<a href="https://github.com/madcampos/oldwebtext/commit/c812552">c812552</a>)</li>
+				<li>update dependabot config (<a href="https://github.com/madcampos/oldwebtext/commit/ed063f9">ed063f9</a>)</li>
+				<li>update dependabot config (<a href="https://github.com/madcampos/oldwebtext/commit/17f8b07">17f8b07</a>)</li>
+				<li>**deps-dev**: bump js-yaml from 4.1.0 to 4.1.1 (<a href="https://github.com/madcampos/oldwebtext/commit/1d1d9d1">1d1d9d1</a>)</li>
+				<li>**deps-dev**: bump vite from 7.1.5 to 7.1.11 (<a href="https://github.com/madcampos/oldwebtext/commit/7a5b74e">7a5b74e</a>)</li>
+				<li>**deps-dev**: bump vite from 7.1.4 to 7.1.5 (<a href="https://github.com/madcampos/oldwebtext/commit/733b204">733b204</a>)</li>
+				<li>**deps-dev**: bump vite from 6.3.3 to 6.3.4 (<a href="https://github.com/madcampos/oldwebtext/commit/4634fcd">4634fcd</a>)</li>
+				<li>update packages and infrastructure (<a href="https://github.com/madcampos/oldwebtext/commit/3b696e0">3b696e0</a>)</li>
+				<li>**deps-dev**: bump vite from 6.2.5 to 6.2.6 (<a href="https://github.com/madcampos/oldwebtext/commit/445380a">445380a</a>)</li>
+				<li>**deps-dev**: bump vite from 6.2.4 to 6.2.5 (<a href="https://github.com/madcampos/oldwebtext/commit/cfbb3b8">cfbb3b8</a>)</li>
+				<li>**deps-dev**: bump vite from 6.2.0 to 6.2.4 (<a href="https://github.com/madcampos/oldwebtext/commit/20cf56d">20cf56d</a>)</li>
+				<li>**deps-dev**: bump vite from 6.0.1 to 6.0.11 (<a href="https://github.com/madcampos/oldwebtext/commit/30beadf">30beadf</a>)</li>
+				<li>add format command (<a href="https://github.com/madcampos/oldwebtext/commit/18463ae">18463ae</a>)</li>
+				<li>remove stylelint (<a href="https://github.com/madcampos/oldwebtext/commit/dc6faf1">dc6faf1</a>)</li>
+				<li>fix eslint command (<a href="https://github.com/madcampos/oldwebtext/commit/fa459b9">fa459b9</a>)</li>
+				<li>update git hooks (<a href="https://github.com/madcampos/oldwebtext/commit/b09d4bb">b09d4bb</a>)</li>
+				<li>update packages (<a href="https://github.com/madcampos/oldwebtext/commit/9ce9986">9ce9986</a>)</li>
+				<li>Update dependabot.yml (<a href="https://github.com/madcampos/oldwebtext/commit/ee8aeb7">ee8aeb7</a>)</li>
+				<li>update dependencies (<a href="https://github.com/madcampos/oldwebtext/commit/176c2f0">176c2f0</a>)</li>
+				<li>update packages (<a href="https://github.com/madcampos/oldwebtext/commit/35728be">35728be</a>)</li>
+				<li>update github pages actions (<a href="https://github.com/madcampos/oldwebtext/commit/6007a2c">6007a2c</a>)</li>
+				<li>cleanup packages (<a href="https://github.com/madcampos/oldwebtext/commit/b51b657">b51b657</a>)</li>
+			</ul>
+
+			<h2>Miscellaneous</h2>
+
+			<ul>
+				<li>Merge pull request #62 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-97347d3346 (<a href="https://github.com/madcampos/oldwebtext/commit/20f721d">20f721d</a>)</li>
+				<li>[dependency update]: Bump wrangler in the dev-dependencies group (<a href="https://github.com/madcampos/oldwebtext/commit/2728e7f">2728e7f</a>)</li>
+				<li>Merge pull request #61 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-b1d1ed2555 (<a href="https://github.com/madcampos/oldwebtext/commit/9d21181">9d21181</a>)</li>
+				<li>[dependency update]: Bump wrangler in the dev-dependencies group (<a href="https://github.com/madcampos/oldwebtext/commit/d294139">d294139</a>)</li>
+				<li>Merge pull request #60 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-574b0d5a74 (<a href="https://github.com/madcampos/oldwebtext/commit/b61b228">b61b228</a>)</li>
+				<li>[dependency update]: bump typescript in the dev-dependencies group (<a href="https://github.com/madcampos/oldwebtext/commit/0ed2bbd">0ed2bbd</a>)</li>
+				<li>Merge pull request #55 from madcampos/dependabot/npm_and_yarn/minimatch-5.1.9 (<a href="https://github.com/madcampos/oldwebtext/commit/77c8034">77c8034</a>)</li>
+				<li>Merge pull request #52 from madcampos/dependabot/npm_and_yarn/multi-571506d351 (<a href="https://github.com/madcampos/oldwebtext/commit/da20aa3">da20aa3</a>)</li>
+				<li>Merge pull request #54 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-27104c84d2 (<a href="https://github.com/madcampos/oldwebtext/commit/6bd9671">6bd9671</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/oldwebtext/commit/b3e4c8d">b3e4c8d</a>)</li>
+				<li>Merge pull request #51 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-7dced69c92 (<a href="https://github.com/madcampos/oldwebtext/commit/e08076b">e08076b</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/oldwebtext/commit/ba41725">ba41725</a>)</li>
+				<li>Merge pull request #50 from madcampos/dependabot/npm_and_yarn/lodash-4.17.23 (<a href="https://github.com/madcampos/oldwebtext/commit/a1fd502">a1fd502</a>)</li>
+				<li>Merge pull request #49 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-bc50e69e4f (<a href="https://github.com/madcampos/oldwebtext/commit/17f75a8">17f75a8</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 5 updates (<a href="https://github.com/madcampos/oldwebtext/commit/08353e0">08353e0</a>)</li>
+				<li>Merge pull request #48 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-e9b0bbd067 (<a href="https://github.com/madcampos/oldwebtext/commit/1fd7ac9">1fd7ac9</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group across 1 directory with 2 updates (<a href="https://github.com/madcampos/oldwebtext/commit/2373aac">2373aac</a>)</li>
+				<li>Merge pull request #46 from madcampos/dependabot/npm_and_yarn/js-yaml-4.1.1 (<a href="https://github.com/madcampos/oldwebtext/commit/3bd9874">3bd9874</a>)</li>
+				<li>Merge pull request #45 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-a281602c46 (<a href="https://github.com/madcampos/oldwebtext/commit/bcf9291">bcf9291</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 6 updates (<a href="https://github.com/madcampos/oldwebtext/commit/323575d">323575d</a>)</li>
+				<li>Merge pull request #44 from madcampos/dependabot/npm_and_yarn/vite-7.1.11 (<a href="https://github.com/madcampos/oldwebtext/commit/7e90099">7e90099</a>)</li>
+				<li>Merge pull request #43 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-187b6c991d (<a href="https://github.com/madcampos/oldwebtext/commit/2fd9d0f">2fd9d0f</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 5 updates (<a href="https://github.com/madcampos/oldwebtext/commit/c624587">c624587</a>)</li>
+				<li>Merge pull request #42 from madcampos/dependabot/npm_and_yarn/vite-7.1.5 (<a href="https://github.com/madcampos/oldwebtext/commit/fb6f875">fb6f875</a>)</li>
+				<li>Merge pull request #41 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-793c22c2c1 (<a href="https://github.com/madcampos/oldwebtext/commit/59a65b4">59a65b4</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 5 updates (<a href="https://github.com/madcampos/oldwebtext/commit/4377a23">4377a23</a>)</li>
+				<li>Merge pull request #40 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-93c73f12c2 (<a href="https://github.com/madcampos/oldwebtext/commit/ba98fb5">ba98fb5</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 5 updates (<a href="https://github.com/madcampos/oldwebtext/commit/79e33a3">79e33a3</a>)</li>
+				<li>Merge pull request #39 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-c2be55a223 (<a href="https://github.com/madcampos/oldwebtext/commit/94575c8">94575c8</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 6 updates (<a href="https://github.com/madcampos/oldwebtext/commit/891dc5e">891dc5e</a>)</li>
+				<li>Merge pull request #38 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-3b1aa7447e (<a href="https://github.com/madcampos/oldwebtext/commit/98dc9d3">98dc9d3</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/oldwebtext/commit/833790b">833790b</a>)</li>
+				<li>Merge pull request #37 from madcampos/dependabot/npm_and_yarn/vite-6.3.4 (<a href="https://github.com/madcampos/oldwebtext/commit/42c11a2">42c11a2</a>)</li>
+				<li>Merge pull request #36 from madcampos/dependabot/npm_and_yarn/vite-6.2.6 (<a href="https://github.com/madcampos/oldwebtext/commit/f70882b">f70882b</a>)</li>
+				<li>Merge pull request #35 from madcampos/dependabot/npm_and_yarn/vite-6.2.5 (<a href="https://github.com/madcampos/oldwebtext/commit/40330b2">40330b2</a>)</li>
+				<li>Merge pull request #34 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-787110165f (<a href="https://github.com/madcampos/oldwebtext/commit/eb8e1ea">eb8e1ea</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/oldwebtext/commit/26b79c0">26b79c0</a>)</li>
+				<li>Merge pull request #33 from madcampos/dependabot/npm_and_yarn/vite-6.2.4 (<a href="https://github.com/madcampos/oldwebtext/commit/e7deb8e">e7deb8e</a>)</li>
+				<li>Merge pull request #31 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-bc9b59c57a (<a href="https://github.com/madcampos/oldwebtext/commit/8393605">8393605</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 6 updates (<a href="https://github.com/madcampos/oldwebtext/commit/f7bd8be">f7bd8be</a>)</li>
+				<li>Merge pull request #30 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-1a36ff76b2 (<a href="https://github.com/madcampos/oldwebtext/commit/0234cda">0234cda</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/oldwebtext/commit/a43f4cf">a43f4cf</a>)</li>
+				<li>Merge pull request #29 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-4ad7d0106c (<a href="https://github.com/madcampos/oldwebtext/commit/16d0c42">16d0c42</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group across 1 directory with 4 updates (<a href="https://github.com/madcampos/oldwebtext/commit/f167942">f167942</a>)</li>
+				<li>Merge pull request #28 from madcampos/dependabot/npm_and_yarn/vite-6.0.11 (<a href="https://github.com/madcampos/oldwebtext/commit/e3dfa9f">e3dfa9f</a>)</li>
+				<li>Merge pull request #26 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-ad59adb4d4 (<a href="https://github.com/madcampos/oldwebtext/commit/a13a4a0">a13a4a0</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 8 updates (<a href="https://github.com/madcampos/oldwebtext/commit/a702f4f">a702f4f</a>)</li>
+				<li>Remove pages action (<a href="https://github.com/madcampos/oldwebtext/commit/ccb8ac4">ccb8ac4</a>)</li>
+				<li>Merge pull request #9 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-334d0afd31 (<a href="https://github.com/madcampos/oldwebtext/commit/e66abb3">e66abb3</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 12 updates (<a href="https://github.com/madcampos/oldwebtext/commit/c6a8ea9">c6a8ea9</a>)</li>
+				<li>update github pages workflow (<a href="https://github.com/madcampos/oldwebtext/commit/18ece07">18ece07</a>)</li>
+				<li>Merge pull request #8 from madcampos/dependabot/npm_and_yarn/vite-5.0.12 (<a href="https://github.com/madcampos/oldwebtext/commit/6cbef75">6cbef75</a>)</li>
+				<li>Merge pull request #7 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-c2efe2267e (<a href="https://github.com/madcampos/oldwebtext/commit/c0239d0">c0239d0</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 11 updates (<a href="https://github.com/madcampos/oldwebtext/commit/577adb2">577adb2</a>)</li>
+				<li>Merge pull request #5 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-5a7cc95a50 (<a href="https://github.com/madcampos/oldwebtext/commit/cea543f">cea543f</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 11 updates (<a href="https://github.com/madcampos/oldwebtext/commit/370fe71">370fe71</a>)</li>
+				<li>Merge pull request #4 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-c259565595 (<a href="https://github.com/madcampos/oldwebtext/commit/8a4e867">8a4e867</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 10 updates (<a href="https://github.com/madcampos/oldwebtext/commit/f91d134">f91d134</a>)</li>
+				<li>Merge pull request #2 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-60c4ebafc7 (<a href="https://github.com/madcampos/oldwebtext/commit/de21f6f">de21f6f</a>)</li>
+				<li>Merge pull request #3 from madcampos/dependabot/npm_and_yarn/babel/traverse-7.23.2 (<a href="https://github.com/madcampos/oldwebtext/commit/694342f">694342f</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 12 updates (<a href="https://github.com/madcampos/oldwebtext/commit/4cc0b4a">4cc0b4a</a>)</li>
+				<li>Merge pull request #1 from madcampos/dependabot/npm_and_yarn/postcss-8.4.31 (<a href="https://github.com/madcampos/oldwebtext/commit/ea63a49">ea63a49</a>)</li>
+				<li>Add preliminary research into hyphenation (<a href="https://github.com/madcampos/oldwebtext/commit/765a397">765a397</a>)</li>
+				<li>Organize as a ES6 module (<a href="https://github.com/madcampos/oldwebtext/commit/4818a96">4818a96</a>)</li>
+				<li>Linting changes (<a href="https://github.com/madcampos/oldwebtext/commit/304689a">304689a</a>)</li>
+				<li>Improve decorators methods (<a href="https://github.com/madcampos/oldwebtext/commit/92e002e">92e002e</a>)</li>
+				<li>Start doc rewrite (<a href="https://github.com/madcampos/oldwebtext/commit/432289b">432289b</a>)</li>
+				<li>Refactor the code (<a href="https://github.com/madcampos/oldwebtext/commit/281da56">281da56</a>)</li>
+				<li>Remove option from config (<a href="https://github.com/madcampos/oldwebtext/commit/3a4af5d">3a4af5d</a>)</li>
+				<li>Cleans API surface (<a href="https://github.com/madcampos/oldwebtext/commit/3e4fb60">3e4fb60</a>)</li>
+				<li>Update arrow config (<a href="https://github.com/madcampos/oldwebtext/commit/d25508a">d25508a</a>)</li>
+				<li>Better structure the code (<a href="https://github.com/madcampos/oldwebtext/commit/b43ea3e">b43ea3e</a>)</li>
+				<li>Minor change to linting configuration (<a href="https://github.com/madcampos/oldwebtext/commit/268cb2c">268cb2c</a>)</li>
+				<li>Changes linting (<a href="https://github.com/madcampos/oldwebtext/commit/d0c228e">d0c228e</a>)</li>
+				<li>Add eslint configuration (<a href="https://github.com/madcampos/oldwebtext/commit/3c95742">3c95742</a>)</li>
+				<li>Better document the code and improve api (<a href="https://github.com/madcampos/oldwebtext/commit/3aad845">3aad845</a>)</li>
+				<li>Add better formating (<a href="https://github.com/madcampos/oldwebtext/commit/5c15b15">5c15b15</a>)</li>
+			</ul>
+
+		]]></description>
+	</item>
+
+	<item>
+		<title>v1.0.0</title>
+		<pubDate>2015-09-20T03:09:49-04:00</pubDate>
+		<description><![CDATA[
+			<a href="https://github.com/madcampos/oldwebtext/compare/3fda1721830e5f1bfaa8991ea23c144b532353a0...v1.0.0">compare changes</a>
+
+
+			<h2>Enhancements</h2>
+
+			<ul>
+				<li>update changelog file (<a href="https://github.com/madcampos/oldwebtext/commit/26be685">26be685</a>)</li>
+				<li>update manifest and base icon (<a href="https://github.com/madcampos/oldwebtext/commit/4013291">4013291</a>)</li>
+				<li>update build process and remove dependencies (<a href="https://github.com/madcampos/oldwebtext/commit/f16c6f8">f16c6f8</a>)</li>
+				<li>update eslint config (<a href="https://github.com/madcampos/oldwebtext/commit/2422d59">2422d59</a>)</li>
+				<li>small tweaks to app (<a href="https://github.com/madcampos/oldwebtext/commit/032c5c1">032c5c1</a>)</li>
+				<li>update url references (<a href="https://github.com/madcampos/oldwebtext/commit/59ba73d">59ba73d</a>)</li>
+				<li>update readme (<a href="https://github.com/madcampos/oldwebtext/commit/fb1625a">fb1625a</a>)</li>
+				<li>remove apple icons (<a href="https://github.com/madcampos/oldwebtext/commit/3c4db2d">3c4db2d</a>)</li>
+				<li>update package dependencies (<a href="https://github.com/madcampos/oldwebtext/commit/59d149c">59d149c</a>)</li>
+				<li>add dependabot config (<a href="https://github.com/madcampos/oldwebtext/commit/51c5913">51c5913</a>)</li>
+				<li>move icons and splashes to public folder (<a href="https://github.com/madcampos/oldwebtext/commit/c35d529">c35d529</a>)</li>
+				<li>update build to vite (<a href="https://github.com/madcampos/oldwebtext/commit/59cb715">59cb715</a>)</li>
+				<li>Add manifest as share target (<a href="https://github.com/madcampos/oldwebtext/commit/ba0f797">ba0f797</a>)</li>
+				<li>Add missing favicon (<a href="https://github.com/madcampos/oldwebtext/commit/5014917">5014917</a>)</li>
+				<li>Implement improvementes to PWA (<a href="https://github.com/madcampos/oldwebtext/commit/93e3d4e">93e3d4e</a>)</li>
+				<li>Add decorators prefered style (<a href="https://github.com/madcampos/oldwebtext/commit/7835c22">7835c22</a>)</li>
+				<li>Improve lib (<a href="https://github.com/madcampos/oldwebtext/commit/f185f84">f185f84</a>)</li>
+				<li>Add loaders (<a href="https://github.com/madcampos/oldwebtext/commit/413e33a">413e33a</a>)</li>
+				<li>Remove build artifacts (<a href="https://github.com/madcampos/oldwebtext/commit/690e7a1">690e7a1</a>)</li>
+				<li>Add PWA built files (<a href="https://github.com/madcampos/oldwebtext/commit/8e43b2f">8e43b2f</a>)</li>
+				<li>Implement PWA (<a href="https://github.com/madcampos/oldwebtext/commit/d13dfa0">d13dfa0</a>)</li>
+			</ul>
+
+			<h2>Fixes</h2>
+
+			<ul>
+				<li>make package private and remove extra logs (<a href="https://github.com/madcampos/oldwebtext/commit/cf8ff82">cf8ff82</a>)</li>
+				<li>linting errors (<a href="https://github.com/madcampos/oldwebtext/commit/ddc4700">ddc4700</a>)</li>
+				<li>resolve linting issues (<a href="https://github.com/madcampos/oldwebtext/commit/b1515ac">b1515ac</a>)</li>
+				<li>update html title (<a href="https://github.com/madcampos/oldwebtext/commit/2edf303">2edf303</a>)</li>
+				<li>change wrong variable (<a href="https://github.com/madcampos/oldwebtext/commit/c90c11b">c90c11b</a>)</li>
+				<li>Resolve service worker export (<a href="https://github.com/madcampos/oldwebtext/commit/db1d24c">db1d24c</a>)</li>
+				<li>Update theme colors (<a href="https://github.com/madcampos/oldwebtext/commit/f23402a">f23402a</a>)</li>
+			</ul>
+
+			<h2>Builds</h2>
+
+			<ul>
+				<li>**deps-dev**: bump vite from 5.0.10 to 5.0.12 (<a href="https://github.com/madcampos/oldwebtext/commit/f0fde14">f0fde14</a>)</li>
+				<li>**deps-dev**: bump @babel/traverse from 7.22.8 to 7.23.2 (<a href="https://github.com/madcampos/oldwebtext/commit/b7c6f93">b7c6f93</a>)</li>
+				<li>**deps-dev**: bump postcss from 8.4.27 to 8.4.31 (<a href="https://github.com/madcampos/oldwebtext/commit/8f46799">8f46799</a>)</li>
+			</ul>
+
+			<h2>Chores &amp; Tasks</h2>
+
+			<ul>
+				<li>update project structure and dependencies (<a href="https://github.com/madcampos/oldwebtext/commit/bfbf3d3">bfbf3d3</a>)</li>
+				<li>**deps-dev**: bump minimatch from 5.1.6 to 5.1.9 (<a href="https://github.com/madcampos/oldwebtext/commit/f9a1678">f9a1678</a>)</li>
+				<li>**deps**: bump rollup (<a href="https://github.com/madcampos/oldwebtext/commit/cf9b351">cf9b351</a>)</li>
+				<li>**deps-dev**: bump lodash from 4.17.21 to 4.17.23 (<a href="https://github.com/madcampos/oldwebtext/commit/1bfa4e4">1bfa4e4</a>)</li>
+				<li>update tsconfig (<a href="https://github.com/madcampos/oldwebtext/commit/c812552">c812552</a>)</li>
+				<li>update dependabot config (<a href="https://github.com/madcampos/oldwebtext/commit/ed063f9">ed063f9</a>)</li>
+				<li>update dependabot config (<a href="https://github.com/madcampos/oldwebtext/commit/17f8b07">17f8b07</a>)</li>
+				<li>**deps-dev**: bump js-yaml from 4.1.0 to 4.1.1 (<a href="https://github.com/madcampos/oldwebtext/commit/1d1d9d1">1d1d9d1</a>)</li>
+				<li>**deps-dev**: bump vite from 7.1.5 to 7.1.11 (<a href="https://github.com/madcampos/oldwebtext/commit/7a5b74e">7a5b74e</a>)</li>
+				<li>**deps-dev**: bump vite from 7.1.4 to 7.1.5 (<a href="https://github.com/madcampos/oldwebtext/commit/733b204">733b204</a>)</li>
+				<li>**deps-dev**: bump vite from 6.3.3 to 6.3.4 (<a href="https://github.com/madcampos/oldwebtext/commit/4634fcd">4634fcd</a>)</li>
+				<li>update packages and infrastructure (<a href="https://github.com/madcampos/oldwebtext/commit/3b696e0">3b696e0</a>)</li>
+				<li>**deps-dev**: bump vite from 6.2.5 to 6.2.6 (<a href="https://github.com/madcampos/oldwebtext/commit/445380a">445380a</a>)</li>
+				<li>**deps-dev**: bump vite from 6.2.4 to 6.2.5 (<a href="https://github.com/madcampos/oldwebtext/commit/cfbb3b8">cfbb3b8</a>)</li>
+				<li>**deps-dev**: bump vite from 6.2.0 to 6.2.4 (<a href="https://github.com/madcampos/oldwebtext/commit/20cf56d">20cf56d</a>)</li>
+				<li>**deps-dev**: bump vite from 6.0.1 to 6.0.11 (<a href="https://github.com/madcampos/oldwebtext/commit/30beadf">30beadf</a>)</li>
+				<li>add format command (<a href="https://github.com/madcampos/oldwebtext/commit/18463ae">18463ae</a>)</li>
+				<li>remove stylelint (<a href="https://github.com/madcampos/oldwebtext/commit/dc6faf1">dc6faf1</a>)</li>
+				<li>fix eslint command (<a href="https://github.com/madcampos/oldwebtext/commit/fa459b9">fa459b9</a>)</li>
+				<li>update git hooks (<a href="https://github.com/madcampos/oldwebtext/commit/b09d4bb">b09d4bb</a>)</li>
+				<li>update packages (<a href="https://github.com/madcampos/oldwebtext/commit/9ce9986">9ce9986</a>)</li>
+				<li>Update dependabot.yml (<a href="https://github.com/madcampos/oldwebtext/commit/ee8aeb7">ee8aeb7</a>)</li>
+				<li>update dependencies (<a href="https://github.com/madcampos/oldwebtext/commit/176c2f0">176c2f0</a>)</li>
+				<li>update packages (<a href="https://github.com/madcampos/oldwebtext/commit/35728be">35728be</a>)</li>
+				<li>update github pages actions (<a href="https://github.com/madcampos/oldwebtext/commit/6007a2c">6007a2c</a>)</li>
+				<li>cleanup packages (<a href="https://github.com/madcampos/oldwebtext/commit/b51b657">b51b657</a>)</li>
+			</ul>
+
+			<h2>Miscellaneous</h2>
+
+			<ul>
+				<li>Merge pull request #62 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-97347d3346 (<a href="https://github.com/madcampos/oldwebtext/commit/20f721d">20f721d</a>)</li>
+				<li>[dependency update]: Bump wrangler in the dev-dependencies group (<a href="https://github.com/madcampos/oldwebtext/commit/2728e7f">2728e7f</a>)</li>
+				<li>Merge pull request #61 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-b1d1ed2555 (<a href="https://github.com/madcampos/oldwebtext/commit/9d21181">9d21181</a>)</li>
+				<li>[dependency update]: Bump wrangler in the dev-dependencies group (<a href="https://github.com/madcampos/oldwebtext/commit/d294139">d294139</a>)</li>
+				<li>Merge pull request #60 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-574b0d5a74 (<a href="https://github.com/madcampos/oldwebtext/commit/b61b228">b61b228</a>)</li>
+				<li>[dependency update]: bump typescript in the dev-dependencies group (<a href="https://github.com/madcampos/oldwebtext/commit/0ed2bbd">0ed2bbd</a>)</li>
+				<li>Merge pull request #55 from madcampos/dependabot/npm_and_yarn/minimatch-5.1.9 (<a href="https://github.com/madcampos/oldwebtext/commit/77c8034">77c8034</a>)</li>
+				<li>Merge pull request #52 from madcampos/dependabot/npm_and_yarn/multi-571506d351 (<a href="https://github.com/madcampos/oldwebtext/commit/da20aa3">da20aa3</a>)</li>
+				<li>Merge pull request #54 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-27104c84d2 (<a href="https://github.com/madcampos/oldwebtext/commit/6bd9671">6bd9671</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/oldwebtext/commit/b3e4c8d">b3e4c8d</a>)</li>
+				<li>Merge pull request #51 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-7dced69c92 (<a href="https://github.com/madcampos/oldwebtext/commit/e08076b">e08076b</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/oldwebtext/commit/ba41725">ba41725</a>)</li>
+				<li>Merge pull request #50 from madcampos/dependabot/npm_and_yarn/lodash-4.17.23 (<a href="https://github.com/madcampos/oldwebtext/commit/a1fd502">a1fd502</a>)</li>
+				<li>Merge pull request #49 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-bc50e69e4f (<a href="https://github.com/madcampos/oldwebtext/commit/17f75a8">17f75a8</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 5 updates (<a href="https://github.com/madcampos/oldwebtext/commit/08353e0">08353e0</a>)</li>
+				<li>Merge pull request #48 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-e9b0bbd067 (<a href="https://github.com/madcampos/oldwebtext/commit/1fd7ac9">1fd7ac9</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group across 1 directory with 2 updates (<a href="https://github.com/madcampos/oldwebtext/commit/2373aac">2373aac</a>)</li>
+				<li>Merge pull request #46 from madcampos/dependabot/npm_and_yarn/js-yaml-4.1.1 (<a href="https://github.com/madcampos/oldwebtext/commit/3bd9874">3bd9874</a>)</li>
+				<li>Merge pull request #45 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-a281602c46 (<a href="https://github.com/madcampos/oldwebtext/commit/bcf9291">bcf9291</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 6 updates (<a href="https://github.com/madcampos/oldwebtext/commit/323575d">323575d</a>)</li>
+				<li>Merge pull request #44 from madcampos/dependabot/npm_and_yarn/vite-7.1.11 (<a href="https://github.com/madcampos/oldwebtext/commit/7e90099">7e90099</a>)</li>
+				<li>Merge pull request #43 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-187b6c991d (<a href="https://github.com/madcampos/oldwebtext/commit/2fd9d0f">2fd9d0f</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 5 updates (<a href="https://github.com/madcampos/oldwebtext/commit/c624587">c624587</a>)</li>
+				<li>Merge pull request #42 from madcampos/dependabot/npm_and_yarn/vite-7.1.5 (<a href="https://github.com/madcampos/oldwebtext/commit/fb6f875">fb6f875</a>)</li>
+				<li>Merge pull request #41 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-793c22c2c1 (<a href="https://github.com/madcampos/oldwebtext/commit/59a65b4">59a65b4</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 5 updates (<a href="https://github.com/madcampos/oldwebtext/commit/4377a23">4377a23</a>)</li>
+				<li>Merge pull request #40 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-93c73f12c2 (<a href="https://github.com/madcampos/oldwebtext/commit/ba98fb5">ba98fb5</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 5 updates (<a href="https://github.com/madcampos/oldwebtext/commit/79e33a3">79e33a3</a>)</li>
+				<li>Merge pull request #39 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-c2be55a223 (<a href="https://github.com/madcampos/oldwebtext/commit/94575c8">94575c8</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 6 updates (<a href="https://github.com/madcampos/oldwebtext/commit/891dc5e">891dc5e</a>)</li>
+				<li>Merge pull request #38 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-3b1aa7447e (<a href="https://github.com/madcampos/oldwebtext/commit/98dc9d3">98dc9d3</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/oldwebtext/commit/833790b">833790b</a>)</li>
+				<li>Merge pull request #37 from madcampos/dependabot/npm_and_yarn/vite-6.3.4 (<a href="https://github.com/madcampos/oldwebtext/commit/42c11a2">42c11a2</a>)</li>
+				<li>Merge pull request #36 from madcampos/dependabot/npm_and_yarn/vite-6.2.6 (<a href="https://github.com/madcampos/oldwebtext/commit/f70882b">f70882b</a>)</li>
+				<li>Merge pull request #35 from madcampos/dependabot/npm_and_yarn/vite-6.2.5 (<a href="https://github.com/madcampos/oldwebtext/commit/40330b2">40330b2</a>)</li>
+				<li>Merge pull request #34 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-787110165f (<a href="https://github.com/madcampos/oldwebtext/commit/eb8e1ea">eb8e1ea</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/oldwebtext/commit/26b79c0">26b79c0</a>)</li>
+				<li>Merge pull request #33 from madcampos/dependabot/npm_and_yarn/vite-6.2.4 (<a href="https://github.com/madcampos/oldwebtext/commit/e7deb8e">e7deb8e</a>)</li>
+				<li>Merge pull request #31 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-bc9b59c57a (<a href="https://github.com/madcampos/oldwebtext/commit/8393605">8393605</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 6 updates (<a href="https://github.com/madcampos/oldwebtext/commit/f7bd8be">f7bd8be</a>)</li>
+				<li>Merge pull request #30 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-1a36ff76b2 (<a href="https://github.com/madcampos/oldwebtext/commit/0234cda">0234cda</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/oldwebtext/commit/a43f4cf">a43f4cf</a>)</li>
+				<li>Merge pull request #29 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-4ad7d0106c (<a href="https://github.com/madcampos/oldwebtext/commit/16d0c42">16d0c42</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group across 1 directory with 4 updates (<a href="https://github.com/madcampos/oldwebtext/commit/f167942">f167942</a>)</li>
+				<li>Merge pull request #28 from madcampos/dependabot/npm_and_yarn/vite-6.0.11 (<a href="https://github.com/madcampos/oldwebtext/commit/e3dfa9f">e3dfa9f</a>)</li>
+				<li>Merge pull request #26 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-ad59adb4d4 (<a href="https://github.com/madcampos/oldwebtext/commit/a13a4a0">a13a4a0</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 8 updates (<a href="https://github.com/madcampos/oldwebtext/commit/a702f4f">a702f4f</a>)</li>
+				<li>Remove pages action (<a href="https://github.com/madcampos/oldwebtext/commit/ccb8ac4">ccb8ac4</a>)</li>
+				<li>Merge pull request #9 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-334d0afd31 (<a href="https://github.com/madcampos/oldwebtext/commit/e66abb3">e66abb3</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 12 updates (<a href="https://github.com/madcampos/oldwebtext/commit/c6a8ea9">c6a8ea9</a>)</li>
+				<li>update github pages workflow (<a href="https://github.com/madcampos/oldwebtext/commit/18ece07">18ece07</a>)</li>
+				<li>Merge pull request #8 from madcampos/dependabot/npm_and_yarn/vite-5.0.12 (<a href="https://github.com/madcampos/oldwebtext/commit/6cbef75">6cbef75</a>)</li>
+				<li>Merge pull request #7 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-c2efe2267e (<a href="https://github.com/madcampos/oldwebtext/commit/c0239d0">c0239d0</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 11 updates (<a href="https://github.com/madcampos/oldwebtext/commit/577adb2">577adb2</a>)</li>
+				<li>Merge pull request #5 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-5a7cc95a50 (<a href="https://github.com/madcampos/oldwebtext/commit/cea543f">cea543f</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 11 updates (<a href="https://github.com/madcampos/oldwebtext/commit/370fe71">370fe71</a>)</li>
+				<li>Merge pull request #4 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-c259565595 (<a href="https://github.com/madcampos/oldwebtext/commit/8a4e867">8a4e867</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 10 updates (<a href="https://github.com/madcampos/oldwebtext/commit/f91d134">f91d134</a>)</li>
+				<li>Merge pull request #2 from madcampos/dependabot/npm_and_yarn/main/dev-dependencies-60c4ebafc7 (<a href="https://github.com/madcampos/oldwebtext/commit/de21f6f">de21f6f</a>)</li>
+				<li>Merge pull request #3 from madcampos/dependabot/npm_and_yarn/babel/traverse-7.23.2 (<a href="https://github.com/madcampos/oldwebtext/commit/694342f">694342f</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 12 updates (<a href="https://github.com/madcampos/oldwebtext/commit/4cc0b4a">4cc0b4a</a>)</li>
+				<li>Merge pull request #1 from madcampos/dependabot/npm_and_yarn/postcss-8.4.31 (<a href="https://github.com/madcampos/oldwebtext/commit/ea63a49">ea63a49</a>)</li>
+				<li>Add preliminary research into hyphenation (<a href="https://github.com/madcampos/oldwebtext/commit/765a397">765a397</a>)</li>
+				<li>Organize as a ES6 module (<a href="https://github.com/madcampos/oldwebtext/commit/4818a96">4818a96</a>)</li>
+				<li>Linting changes (<a href="https://github.com/madcampos/oldwebtext/commit/304689a">304689a</a>)</li>
+				<li>Improve decorators methods (<a href="https://github.com/madcampos/oldwebtext/commit/92e002e">92e002e</a>)</li>
+				<li>Start doc rewrite (<a href="https://github.com/madcampos/oldwebtext/commit/432289b">432289b</a>)</li>
+				<li>Refactor the code (<a href="https://github.com/madcampos/oldwebtext/commit/281da56">281da56</a>)</li>
+				<li>Remove option from config (<a href="https://github.com/madcampos/oldwebtext/commit/3a4af5d">3a4af5d</a>)</li>
+				<li>Cleans API surface (<a href="https://github.com/madcampos/oldwebtext/commit/3e4fb60">3e4fb60</a>)</li>
+				<li>Update arrow config (<a href="https://github.com/madcampos/oldwebtext/commit/d25508a">d25508a</a>)</li>
+				<li>Better structure the code (<a href="https://github.com/madcampos/oldwebtext/commit/b43ea3e">b43ea3e</a>)</li>
+				<li>Minor change to linting configuration (<a href="https://github.com/madcampos/oldwebtext/commit/268cb2c">268cb2c</a>)</li>
+				<li>Changes linting (<a href="https://github.com/madcampos/oldwebtext/commit/d0c228e">d0c228e</a>)</li>
+				<li>Add eslint configuration (<a href="https://github.com/madcampos/oldwebtext/commit/3c95742">3c95742</a>)</li>
+				<li>Better document the code and improve api (<a href="https://github.com/madcampos/oldwebtext/commit/3aad845">3aad845</a>)</li>
+				<li>Add better formating (<a href="https://github.com/madcampos/oldwebtext/commit/5c15b15">5c15b15</a>)</li>
+				<li>Update README.md (<a href="https://github.com/madcampos/oldwebtext/commit/0ed6f91">0ed6f91</a>)</li>
+				<li>Update README.md (<a href="https://github.com/madcampos/oldwebtext/commit/c9ff612">c9ff612</a>)</li>
+				<li>Create lib.js (<a href="https://github.com/madcampos/oldwebtext/commit/b24f121">b24f121</a>)</li>
+			</ul>
+
 		]]></description>
 	</item>
 </channel>
