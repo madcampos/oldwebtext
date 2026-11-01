@@ -45,10 +45,10 @@
 	},
 	"devDependencies": {
 		"@mad-c/config": "^4.2.1",
-		"dprint": "^0.57.4",
-		"oxlint": "^1.83.0",
+		"dprint": "^0.63.0",
+		"oxlint": "^1.88.0",
 		"oxlint-tsgolint": "^7.0.2001",
 		"typescript": "^7.0.2",
-		"wrangler": "4.134.0"
+		"wrangler": "4.151.1"
 	}
 }
